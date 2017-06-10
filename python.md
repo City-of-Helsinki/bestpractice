@@ -24,10 +24,12 @@
 * Use a code style checker like [flake8](https://pypi.python.org/pypi/flake8)
 
 * Make [py.test](https://docs.pytest.org/en/latest/) tests,
-  and run tests against latest released Python 3 and optionally pypy.
-  If more than one version has to be supported,
-  or your system/virtualenv Python isn't the latest Python 3,
-  use [tox](https://tox.readthedocs.io/en/latest/).
+  and run tests against latest released Python 3 and optionally pypy
+  using [tox](https://tox.readthedocs.io/en/latest/).
+
+* Use [pyenv](https://github.com/pyenv/pyenv) to install up to date (or older!) Python versions not available in your distribution repos
+
+* Use `pyenv virtualenv` (or `python -m venv` if not using pyenv) for creating virtualenvs, not `virtualenv` or other alternatives when using virtual environments in scripts.
 
 * Do not use print unless you really specifically want to print to stdout
   (for example with a cli tool).
