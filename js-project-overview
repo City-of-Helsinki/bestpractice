@@ -1,0 +1,24 @@
+# huvaja, varaamo, asomap
+circleci
+react redux
+webpack babel eslint karma
+
+# kerrokantasi-ui
+jest
+
+# servicemap
+grunt bower
+coffeescript
+backbone
+
+# helerm-ui
+better-npm-run
+karma
+webpack
+eslint
+react redux
+travis
+
+# kore-ui
+react flux
+karma
