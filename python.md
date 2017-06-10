@@ -42,10 +42,16 @@
 
 * Prepare the project for distribution in the same way as the
   [pypa sampleproject](https://github.com/pypa/sampleproject):
-  Write a setup.py, setup.cfg, README.rst, LICENSE.txt and .travis.yml files,
+  Write a setup.py, setup.cfg, README.rst,
+  LICENSE (in most cases the MIT license)
+  and .travis.yml files,
   create a directory for tests (named `tests`),
   *but* make a top level directories for the actual package code
   named `src`, *not* [the same as the package](https://blog.ionelmc.ro/2014/05/25/python-packaging/#the-structurehttps://blog.ionelmc.ro/2014/05/25/python-packaging/#the-structure).
+  In case the project is not a reusable part of a bigger application,
+  but a standalone app requiring a more complex installation
+  (like a Django project requiring a database setup etc.),
+  you can skip the setup.py setup.cfg.
 
 * Use semantic versions
 
