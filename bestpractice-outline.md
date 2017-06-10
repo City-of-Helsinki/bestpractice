@@ -6,6 +6,10 @@
    * Auth
       * Login methods
       * Tracking accounts
+      * pam-ssh-agent-auth
+      * two factor
+      * keys only, ed25519
+      * https://stribika.github.io/2015/01/04/secure-secure-shell.html
    * Tracking updates
       * Policy for OS versions
       * Tracking OS deprecation
