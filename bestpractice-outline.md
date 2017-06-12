@@ -35,6 +35,7 @@
       * Deprecation policy
    * Style and conventions
       * Airbnb
+      * Comment language
    * Automatic checks
       * Lint
       * Tests
@@ -55,6 +56,7 @@
       * Pypi
       * CI
    * Webpack vs grunt, npm vs yarn
+   * UI translations
 * Process
    * Method
       * Kanban/scrum
