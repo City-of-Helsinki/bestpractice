@@ -28,8 +28,7 @@
 * Use a code style checker like [flake8](https://pypi.python.org/pypi/flake8)
 
 * Make [py.test](https://docs.pytest.org/en/latest/) tests,
-  and run tests against latest released Python 3 and optionally pypy
-  using [tox](https://tox.readthedocs.io/en/latest/).
+  and run tests against latest released Python 3.
 
 * Use [pyenv](https://github.com/pyenv/pyenv) to install up to date (or older!) Python versions not available in your distribution repos
 
