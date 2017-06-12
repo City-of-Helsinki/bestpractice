@@ -7,7 +7,7 @@
   https://www.python.org/dev/peps/pep-0008/#maximum-line-length
 
 * Write [Pythonic code](https://speakerdeck.com/pyconslides/transforming-code-into-beautiful-idiomatic-python-by-raymond-hettinger-1),
-  not [Java with pep8](https://www.youtube.com/watch?v=wf-BqAjZb8M)
+  not [Java (< 5) with pep8](https://www.youtube.com/watch?v=wf-BqAjZb8M)
 
   Not
 
