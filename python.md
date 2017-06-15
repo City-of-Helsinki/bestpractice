@@ -1,9 +1,13 @@
 ### Python conventions
 
 * Use [pep8](https://www.python.org/dev/peps/pep-0008/)
+  With the exception that the absolute maximum line length is 119 characters
+  if it increases readability. The recommended line length for most cases is
+  still 79.
+  https://www.python.org/dev/peps/pep-0008/#maximum-line-length
 
 * Write [Pythonic code](https://speakerdeck.com/pyconslides/transforming-code-into-beautiful-idiomatic-python-by-raymond-hettinger-1),
-  not [Java with pep8](https://www.youtube.com/watch?v=wf-BqAjZb8M)
+  not [Java (< 5) with pep8](https://www.youtube.com/watch?v=wf-BqAjZb8M)
 
   Not
 
@@ -24,8 +28,7 @@
 * Use a code style checker like [flake8](https://pypi.python.org/pypi/flake8)
 
 * Make [py.test](https://docs.pytest.org/en/latest/) tests,
-  and run tests against latest released Python 3 and optionally pypy
-  using [tox](https://tox.readthedocs.io/en/latest/).
+  and run tests against latest released Python 3.
 
 * Use [pyenv](https://github.com/pyenv/pyenv) to install up to date (or older!) Python versions not available in your distribution repos
 
