@@ -57,6 +57,8 @@
       * CI
    * Webpack vs grunt, npm vs yarn
    * UI translations
+   * github specials
+      * technology and concept topics
 * Process
    * Method
       * Kanban/scrum
