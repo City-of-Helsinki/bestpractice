@@ -6,7 +6,6 @@
     * Additional webpack modules need to go through architecture review
 * piwik for analytics and Sentry for error tracking
 * travis for CI
-* karma for tests
 * Use browserstack/saucelabs or similar to test mainstream browsers and devices
 * Create a visual style guide with the UI components
     * Test the components visually with gemini
@@ -24,3 +23,8 @@
 * Put component specific styling next to component ES code using webpack css-loader
 * export defaults with same name as the file
   (or the containing folder if using index.js inside a component folder)
+* Write tests with jest, chai and enzyme
+
+### Open issues / ideas
+
+* Chrome Lighthouse (analyses, but are weak points worth pursuing?)
