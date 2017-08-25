@@ -11,6 +11,8 @@
     * Test the components visually with gemini
     * A single page with all the components for human consumption,
       separate pages with component per page for CI
+* process.env can be read only from one file,
+  separate ENVs that are read only build time and those that are read runtime
 
 
 #### React
