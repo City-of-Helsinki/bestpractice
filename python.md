@@ -27,7 +27,7 @@
 
 * Use a code style checker like [flake8](https://pypi.python.org/pypi/flake8)
 
-* Make [py.test](https://docs.pytest.org/en/latest/) tests,
+* Make [pytest](https://docs.pytest.org/en/latest/) tests,
   and run tests against latest released Python 3.
 
 * Use [pyenv](https://github.com/pyenv/pyenv) to install up to date (or older!) Python versions not available in your distribution repos
@@ -50,7 +50,7 @@
   and .travis.yml files,
   create a directory for tests (named `tests`),
   *but* make a top level directories for the actual package code
-  named `src`, *not* [the same as the package](https://blog.ionelmc.ro/2014/05/25/python-packaging/#the-structurehttps://blog.ionelmc.ro/2014/05/25/python-packaging/#the-structure).
+  named `src`, *not* [the same as the package](https://blog.ionelmc.ro/2014/05/25/python-packaging/#the-structure).
   In case the project is not a reusable part of a bigger application,
   but a standalone app requiring a more complex installation
   (like a Django project requiring a database setup etc.),
