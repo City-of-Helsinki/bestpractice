@@ -19,6 +19,11 @@
       * User interaction: piwik, ga
       * Errors: sentry
       * Perf and availability
+   * HTTP
+      * HTTP/2
+      * OCSP Expect-Staple (and Must-Staple)
+      * Certificate Transparency monitoring
+      * Certificate Authority Authorization
    * Abstraction level
       * Hardware
       * Paas
@@ -59,12 +64,21 @@
    * UI translations
    * github specials
       * technology and concept topics
+   * feature flags
 * Process
    * Method
       * Kanban/scrum
       * Peer review
          * Review queued before new tasks
+         * Review guide, list of things to check for
+            * Passing automatic stuff (CI/tests/lint)
+            * Verify visual changes match design (if using visual diffs)
+            * Race conditions
+            * Input handling/escaping
+            * OWASP
+         * Reviewer (autosquashes,) rebases and merges
       * Dev in branches
+         * Use master, not develop (don't leave master empty or delete it, just use it)
          * Rebase (or merge?), squash to sensible pieces, not in one commit
    * Meetings
       * How to have efficient meetings
@@ -85,3 +99,11 @@
 * External relations
    * Comm channel
    * Handling (pull) requests
+   * Clear way to communicate security problems
+* OWASP
+   * https://www.owasp.org/index.php/Category:OWASP_Code_Review_Project has 2.0 in August
+   * https://www.owasp.org/index.php/Category:OWASP_Testing_Project
+   * https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet
+   * https://www.owasp.org/index.php/CSRF_Prevention_Cheat_Sheet
+   * https://www.owasp.org/index.php/Category:Cheatsheets
+* Threat modeling
