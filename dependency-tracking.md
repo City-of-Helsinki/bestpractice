@@ -25,6 +25,12 @@ Seems to have email
 Has only CLI for Python. Node has everything
 Automatically filters repos to those that can be supported
 Has a dashboard
+Just got full Python support
+Does subdependencies (called deep dependencies)
+Checks only for security problems, not all updates
+Three Python repos couldn't complete the test, refreshing didn't help. No error messages.
+Problem with Pillow CVE that is already fixed
+Uses python2.7 and installs with pip; cannot handle dependencies that require python3 or headers like gdal
 
 ## pyup.io
 Only Python
@@ -94,7 +100,7 @@ Don't have free OSS plan, and in fact doesn' even list the price
 
 A lot more at https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis
 
-## SonarQube / SonarCloud, Coverity
+## SonarQube / SonarCloud, Coverity, landscape.io, scrutinizer-ci.com, codeclimate, bithound
 Integrates only via CI, doesn't check dependencies but actual code.
 Is rather like a smart linter.
 
