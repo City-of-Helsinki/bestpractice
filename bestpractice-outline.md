@@ -31,7 +31,10 @@
    * Availability requirements
    * Privilege separation
    * CD
-   * Dev, beta, prod
+   * Automatic branches for PRs, automatic master to dev, manual promotes to test and prod
+   * Store passwords with argon2i, or bcrypt for legacy (argon2 is better against FPGAs) —
+     PBKDF2 and SHA256 are too easy to crack on 32bit GPUs, SHA512 on 64bit GPUs,
+     and scrypt requires too much resources on multi user machines and has TMTOs
 * Coding
    * Used languages, libs and frameworks
       * Python, ES7
@@ -65,6 +68,8 @@
    * github specials
       * technology and concept topics
    * feature flags
+   * Do not commit commented code, just remove it
+   * Don't duplicate code (like use two functions for almost same things)
 * Process
    * Method
       * Kanban/scrum
@@ -77,6 +82,10 @@
             * Input handling/escaping
             * OWASP
          * Reviewer (autosquashes,) rebases and merges
+         * https://web.archive.org/web/20151009202810/http://smartbear.com/all-resources/articles/best-practices-for-peer-code-review/
+           * Try to make PRs of less than 400 lines
+           * Don't do review mork for more than hour at a time
+           * Make/improve checklists
       * Dev in branches
          * Use master, not develop (don't leave master empty or delete it, just use it)
          * Rebase (or merge?), squash to sensible pieces, not in one commit
