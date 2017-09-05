@@ -26,16 +26,6 @@
 * check that imagemagick isn't used
 * Run tests with deprecation warnings on
 * https://pypi.python.org/pypi/check-manifest
-* static typing
-    * What are good usecases?
-        * (doc)tests
-        * static linting / checking
-        * self documenting code
-    * mypy (see https://github.com/zulip/zulip for example of Django project)
-    * PEP 3107 (function annotations),
-      PEP 484 (defined format for annotations + comment annotations),
-      PEP 526 (syntax for variable annotations)
-    * https://github.com/python/typeshed
 * namedtuples or attrs (https://github.com/python-attrs/attrs), https://pypi.python.org/pypi/aenum
     * In Python 3.6:
 

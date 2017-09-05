@@ -18,7 +18,7 @@
     ```
 
     but
-  
+ 
     ```python
     for color in colors:
       print(color)
@@ -58,7 +58,43 @@
 
 *   Use semantic versions
 
-  
+*   Use static typing for APIs instead of comments.
+    That way IDEs can give better info, and we can do some static checking (so the type info will not get stale, unlike comments).
+
+    *   Not like this:
+        ```python
+        def func_with_docstring(foo, bar):
+            """Return the baz of foo and bar
+ 
+            Args:
+                foo: int
+                bar: float
+            Returns:
+                float
+            """
+            return bar/foo
+        ```
+
+        But like this:
+        ```python
+        def func_with_typing(foo: int, bar: float) -> float:
+            """Return the baz of foo and bar"""
+            return bar/foo
+        ```
+
+    *   Use mypy for checking
+    *   Use your editor tooling (for example PyCharm can benefit from types)
+    *   Check
+        PEP 3107 (function annotations),
+        PEP 484 (defined format for annotations + comment annotations) and
+        PEP 526 (syntax for variable annotations)
+    *   https://github.com/zulip/zulip is and example of
+        type annotated Django project.
+
+*   Use a doctest to illustrate use and also run the doctests
+    (again, so that they won't get stale).
+
+ 
 
 #### Hints
 
