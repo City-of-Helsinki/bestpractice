@@ -93,8 +93,20 @@
 
 *   Use a doctest to illustrate use and also run the doctests
     (again, so that they won't get stale).
+*   Use https://docs.python.org/3/library/secrets.html for cryptographic needs, not the `random` module
+*   Use whitelists for reading `POST` data to avoid mass assignment problems https://coffeeonthekeyboard.com/mass-assignment-security-part-10-855/
+*   Do not use truthiness to check for existence, since values like None, False, 0, and '' will fail the check.
+    *   Use `is not None` or `not in iterable_instance` and so on, as appropriate
+*   Do not use assert for normal runtime checks (for example to validate incoming data)
+    as they will be disabled with debug off (in cpython). Use plain ifs and then raise assertions explicitly
+    *   Testing uses the assert as syntax sugar, which is fine. You don't run tests in production.
+*   Do not use tuples as placeholder for lists you think will not change.
+    Tuples are semantically limited in length, lists inherently might be of different length even if
+    in one particular case they aren't.
+    *   Compare the concepts of coordinates (always `(x, y)`, `(x, y, z)` etc.) to a list of Django plugins.
+        Coordinates never have different length, that would simply be a different data type,
+        but different Django projects have different length of plugin lists even if *your* app's doesn't change.
 
- 
 
 #### Hints
 

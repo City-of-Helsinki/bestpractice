@@ -69,7 +69,16 @@
       * technology and concept topics
    * feature flags
    * Do not commit commented code, just remove it
-   * Don't duplicate code (like use two functions for almost same things)
+      * This happens often when you "try things out", but eventually you should choose one way
+      * Old versions belong to version control history
+      * If you really need alternative implementations, use feature flags, command line options etc.
+        and document them (with the raison d'être)
+   * Don't duplicate/repeat code (like use two functions for almost same things)
+     aka DRY (Do not Repeat Yourself)
+      * Especially do not do things *almost* the same so that it's difficult to see the difference
+      * Multiple implementations double the number of bugs,
+        and make it harder to compose a mental model of the whole
+   * Counter to DRY – do not create elaborate architectures prematurely. Use refactoring when needed.
 * Process
    * Method
       * Kanban/scrum
