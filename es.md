@@ -13,6 +13,7 @@
       separate pages with component per page for CI
 * process.env can be read only from one file,
   separate ENVs that are read only build time and those that are read runtime
+* Avoid using target="\_blank", and if you do, use noreferrer and noopener
 
 
 #### React

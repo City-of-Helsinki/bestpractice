@@ -35,6 +35,8 @@
    * Store passwords with argon2i, or bcrypt for legacy (argon2 is better against FPGAs) —
      PBKDF2 and SHA256 are too easy to crack on 32bit GPUs, SHA512 on 64bit GPUs,
      and scrypt requires too much resources on multi user machines and has TMTOs
+   * Be sure that your random source is appropriate for cryptography, when necessary
+     (most aren't, and are instead fast, physically random or have some other goals)
 * Coding
    * Used languages, libs and frameworks
       * Python, ES7
@@ -122,6 +124,7 @@
    * https://www.owasp.org/index.php/Category:OWASP_Code_Review_Project has 2.0 in August
    * https://www.owasp.org/index.php/Category:OWASP_Testing_Project
    * https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet
-   * https://www.owasp.org/index.php/CSRF_Prevention_Cheat_Sheet
+   * https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet
    * https://www.owasp.org/index.php/Category:Cheatsheets
+   * https://www.owasp.org/index.php/Mass_Assignment_Cheat_Sheet
 * Threat modeling
