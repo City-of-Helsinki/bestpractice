@@ -1,9 +1,12 @@
 ### Python conventions
 
 *   Use [pep8](https://www.python.org/dev/peps/pep-0008/)
-    With the exception that the absolute maximum line length is 119 characters
-    if it increases readability. The recommended line length for most cases is
-    still 79.
+    With the exceptions
+    that the closing brace/bracket/parenthesis on multi-line constructs must be lined
+    up under the first character of the line that starts the multi-line construct,
+    and the absolute maximum line length is 119 characters
+    if it increases readability.
+    The recommended line length for most cases is still 79.
     https://www.python.org/dev/peps/pep-0008/#maximum-line-length
 
 *   Write [Pythonic code](https://speakerdeck.com/pyconslides/transforming-code-into-beautiful-idiomatic-python-by-raymond-hettinger-1),
