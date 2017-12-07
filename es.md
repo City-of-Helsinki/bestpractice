@@ -60,6 +60,16 @@
     Use `finally` to avoid code duplication and to semantically
     separate cleanup from the other parts.
 
+    If you need to run the Promises in parallel,
+    create the promises first and then await for them in a loop,
+    or use Promise.all() (or .race()).
+
+    If for some reason you really do need to use the Promise API directly,
+    beware [the various gotchas](https://pouchdb.com/2015/05/18/we-have-a-problem-with-promises.html)
+    like promise results falling through `.then`s when the `.then` doesn't get a function,
+    or how the error handler in `.then` doesn't catch errors coming from the result handler in the same `.then`.
+    And especially always catch the errors, as otherwise they will go to a black hole and you'll never hear from them (at least write a `.catch(console.log.bind(console))`).
+
 
 #### React
 
