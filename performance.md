@@ -1,5 +1,6 @@
 * frontend tracking
   * lighthouse / CLI
+  * run against every new commit / PR
 * backend tracking
   * static requests
 * storage of
