@@ -69,6 +69,8 @@
    * UI translations
    * github specials
       * technology and concept topics
+      * quite a few tools specific to github
+      * like indentations in this list
    * feature flags
    * Do not commit commented code, just remove it
       * This happens often when you "try things out", but eventually you should choose one way
