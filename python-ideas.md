@@ -7,6 +7,8 @@
     * wheels
     * debs
     * How much Python/Django knowledge is required?
+* state
+    * how to handle database migrations
 * docs
     * formatting (md, rst)
     * systems (sphinx, mkdocs)
