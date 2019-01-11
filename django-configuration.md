@@ -40,4 +40,29 @@ OIDC_API_TOKEN_AUTH = {
 }
 ```
 
+## Authentication config for APIs
 
+Software implementing an APIs need to often need the ability to authenticate
+incoming requests, fe. when personal data is requested. City of Helsinki
+projects use a token authentication based on OIDC/Oauth stuff.
+
+The software component handling this is `django-helusers`. Which needs
+OIDC_API_TOKEN_AUTH dict filled as seen above. For easier operations the
+configuration variables should be mapped to environment variables as seen
+above.
+
+### Meaning of the environment variables
+
+`TOKEN_AUTH_ACCEPTED_AUDIENCE`: specifies the "aud"-field that should be
+present in the token presented by the client. This is a URL that identifying
+a single deployment of your API software. However, it is not the url where
+the API is located, but instead an identifier in the namespace used by
+authentication server. For example: `https://api.hel.fi/auth/haravadev`
+
+`TOKEN_AUTH_AUTHSERVER_URL`: specifies the URL the the authentication server
+standard OIDC-endpoint. As opposed to the "accepted audience" setting, this
+is a honest to goodness URL. The libraries will need to find
+`.well-known/openid-configuration` path under this url. Example:
+`https://api.hel.fi/sso-test/openid/`
+
+There are also other variables. I've forgotten what they mean.
