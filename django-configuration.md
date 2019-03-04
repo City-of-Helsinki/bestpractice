@@ -54,14 +54,14 @@ above.
 ### Meaning of the environment variables
 
 `TOKEN_AUTH_ACCEPTED_AUDIENCE`: specifies the "aud"-field that should be
-present in the token presented by the client. This is a URL that identifying
+present in the token presented by the client. This is an URL identifying
 a single deployment of your API software. However, it is not the url where
 the API is located, but instead an identifier in the namespace used by
 authentication server. For example: `https://api.hel.fi/auth/haravadev`
 
 `TOKEN_AUTH_AUTHSERVER_URL`: specifies the URL the the authentication server
 standard OIDC-endpoint. As opposed to the "accepted audience" setting, this
-is a honest to goodness URL. The libraries will need to find
+is a honest to goodness URL. The libraries handling OIDC will expect to find
 `.well-known/openid-configuration` path under this url. Example:
 `https://api.hel.fi/sso-test/openid/`
 
