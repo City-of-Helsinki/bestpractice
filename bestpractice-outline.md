@@ -113,6 +113,9 @@
    * UX design
       * UI flow graph / state machine
       * User stories
+* Licenses
+   * Just use MIT
+   * Unless specific reasons (have to use license-incompatible components?)
 * Docs
    * Design defense
       * Compare alternatives
