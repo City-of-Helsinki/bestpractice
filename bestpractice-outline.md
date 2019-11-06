@@ -111,6 +111,7 @@
    * Just use MIT
    * Unless specific reasons (have to use license-incompatible components?)
 * Docs
+   * Create automatically when possible
    * Design defense
       * Compare alternatives
    * Rudimentary performance analysis
@@ -118,6 +119,7 @@
 * External relations
    * Comm channel
    * Handling (pull) requests
+   * Document contribution protocol in every README.md
    * Clear way to communicate security problems
 * OWASP
    * https://www.owasp.org/index.php/Category:OWASP_Code_Review_Project has 2.0 in August
