@@ -15,6 +15,7 @@ Backend services
   - Node.js with Apollo
 - For serving static files of React apps:
   - Node.js with express (and server-side rendering)
+- Make all APIs available through api.hel.fi
 
 Frontend services
 -----------------
@@ -35,6 +36,13 @@ Frontend services
   - don't customise wordpress if you can avoid it
     - if you can't, adhere to their coding standards to try to make the
       code work across upgrades
+
+Creating Libraries
+------------------
+
+- use npm and PyPI for distribution
+- always include own libraries via npm/PyPI, never directly via version
+  control / local installation
 
 Helpers & tooling
 -----------------
