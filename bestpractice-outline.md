@@ -38,12 +38,10 @@
    * Be sure that your random source is appropriate for cryptography, when necessary
      (most aren't, and are instead fast, physically random or have some other goals)
 * Coding
-   * Used languages, libs and frameworks
-      * Python, ES7
-      * Django, DRF
+   * Used languages, libs and frameworks: see [./technology-choices.md]
    * Supported clients
       * Deprecation policy
-   * Style and conventions
+   * Style and conventions: see [./coding-standards.md]
       * Airbnb
       * Comment language
    * Automatic checks
@@ -61,11 +59,7 @@
    * External dependencies
       * Caching
       * Tracking updates
-   * Distribution
-      * Docker, rkt
-      * Pypi
-      * CI
-   * Webpack vs grunt, npm vs yarn
+   * Distribution: see [./technology-choices.md]
    * UI translations
    * github specials
       * technology and concept topics
@@ -117,6 +111,7 @@
    * Just use MIT
    * Unless specific reasons (have to use license-incompatible components?)
 * Docs
+   * Create automatically when possible
    * Design defense
       * Compare alternatives
    * Rudimentary performance analysis
@@ -124,6 +119,7 @@
 * External relations
    * Comm channel
    * Handling (pull) requests
+   * Document contribution protocol in every README.md
    * Clear way to communicate security problems
 * OWASP
    * https://www.owasp.org/index.php/Category:OWASP_Code_Review_Project has 2.0 in August
