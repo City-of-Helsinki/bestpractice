@@ -2,7 +2,7 @@
 
 Configuration for all new projects should be done using environment variables if at all possible.
 
-Projects should use (django-environ)[https://pypi.org/project/django-environ/] for reading environment
+Projects should use [django-environ](https://pypi.org/project/django-environ/) for reading environment
 variables. This makes it easy to inspect available settings from settings.py
 
 ## Usage example

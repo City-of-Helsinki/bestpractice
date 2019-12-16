@@ -51,7 +51,7 @@ The definition of ready (DoR) is a requirement list for an issue to consider "im
 
 To be considered for implementation, an issue must have
 
-  * For features: (see the template)[https://helsinkisolutionoffice.atlassian.net/browse/KUVA-358]
+  * For features: [see the template](https://helsinkisolutionoffice.atlassian.net/browse/KUVA-358)
     * user story: once the feature is implemented, who will be able to do what, and how?
     * description of how it works (what actually happens in the story, in a technical sense)
     * acceptance criteria
@@ -63,7 +63,7 @@ To be considered for implementation, an issue must have
     * example API calls and how to test them
     * Translations for texts (and l10n in general) (for UI features that have localisation)
     * firewall openings (for backend features)
-  * For bugs:  (see the template)[https://helsinkisolutionoffice.atlassian.net/browse/KUVA-359]
+  * For bugs:  [see the template](https://helsinkisolutionoffice.atlassian.net/browse/KUVA-359)
     * directions for reproducing the bug
     * what should have happened instead
 
@@ -104,5 +104,5 @@ Ensure that we follow agile principles and scrum to your best abilities:
 
 In general, see:
 
-  * (scrum master responsibilities)[https://scrummasterchecklist.org/pdf/ScrumMaster_Checklist_12_unbranded.pdf]
-  * (scrum checklist)[https://www.crisp.se/wp-content/uploads/2012/05/Scrum-checklist.pdf]
+  * [scrum master responsibilities](https://scrummasterchecklist.org/pdf/ScrumMaster_Checklist_12_unbranded.pdf)
+  * [scrum checklist](https://www.crisp.se/wp-content/uploads/2012/05/Scrum-checklist.pdf)
