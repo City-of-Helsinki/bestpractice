@@ -1,4 +1,4 @@
-# Project Management Practices
+# Project Management Practices When Using Scrum
 
 We use Scrum with planning, reviews, and retrospectives.  We also have
 issue-specific grooming sessions to prepare for sprint plannings.
