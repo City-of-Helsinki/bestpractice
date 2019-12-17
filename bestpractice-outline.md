@@ -38,10 +38,10 @@
    * Be sure that your random source is appropriate for cryptography, when necessary
      (most aren't, and are instead fast, physically random or have some other goals)
 * Coding
-   * Used languages, libs and frameworks: see [./technology-choices.md]
+   * Used languages, libs and frameworks: see [tech choices](./technology-choices.md)
    * Supported clients
       * Deprecation policy
-   * Style and conventions: see [./coding-standards.md]
+   * Style and conventions: see [coding standards](./coding-standards.md)
       * Airbnb
       * Comment language
    * Automatic checks
@@ -59,7 +59,7 @@
    * External dependencies
       * Caching
       * Tracking updates
-   * Distribution: see [./technology-choices.md]
+   * Distribution: see [tech choices](./technology-choices.md)
    * UI translations
    * github specials
       * technology and concept topics
