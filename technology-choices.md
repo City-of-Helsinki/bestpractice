@@ -50,6 +50,7 @@ Helpers & tooling
 - docker (and Dockerfiles) for creating runnable, publishable images
   - make the image so that `docker run XXX` (with environment variables)
     brings up a working service
+    - Speficially for transpiled and packaged ES/React UIs, make sure that the environment variables are respected at runtime and not at compile time, and that the transpiled application is pre-built into the docker image (doesn't need to be rebuilt in the production environment). This means that the environment variables needed in the browser app should be read by the application's node server and transmitted to the browser runtime environment by embedding them into the server generated HTML or by providing an API for them. Make sure to whitelist and transmit only those environment variables which do not contain security-critical secrets or other sensitive data.
   - test, stage, and production environments are always installed by the
     Docker images in dockerhub
   - docker-compose for reproducibly bringing up dev environments
