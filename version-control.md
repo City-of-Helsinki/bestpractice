@@ -23,6 +23,8 @@
 * Any developer can (and should) do code reviews before taking on new work.
 * After doing a review, you should ensure that it gets past acceptance and testing. This means notifying the ticket creator, service owner, or an end user and ensuring they can test that the feature works as it should.
 
+[Accepting outsider contributions](./accepting-contributions.md) has its own instructions.
+
 ## Git Workflow
 This project uses the [Gitflow](https://nvie.com/posts/a-successful-git-branching-model/) workflow which is a popular [Git workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow). The Gitflow workflow is very similar to the [Feature Branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow), with the difference that it is more suitable for large and more complex projects, especially those that are in continuous development.
 
