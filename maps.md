@@ -30,7 +30,9 @@ Helsinki currently has three map styles based on Openstreetmap data and the [Ope
 
 We provide an OSM tile server on [http://tiles.hel.ninja](http://tiles.hel.ninja), and its front page provides you previews of the three OSM map styles available, as well as viewers that are an example of how you can use our raster and vector tiles based on OSM data. The three map styles currently available are [hel-osm-bright](http://tiles.hel.ninja/styles/hel-osm-bright/#11.38/60.185/24.9463) intended to be a bright background map look, [hel-osm-light](http://tiles.hel.ninja/styles/hel-osm-light/#11.38/60.185/24.9463), a more subdued gray background map, and [hel-osm-high-contrast](http://tiles.hel.ninja/styles/hel-osm-high-contrast/#11.38/60.185/24.9463) in B&W, for extra clarity or for people with limited eyesight. Our Tileserver GL serves the tile data in both vector and raster modes.
 
-1) *In new UI applications*, we recommend using a vector tile rendering library such as [MapBox GL JS](https://github.com/mapbox/mapbox-gl-js) with [React-map-gl](https://uber.github.io/react-map-gl/), or any other library capable of rendering [the MapBox vector tile format](https://docs.mapbox.com/vector-tiles/reference/). Also Leaflet has [plugins](https://leafletjs.com/plugins.html#vector-tiles) that purport to have Mapbox vector tile support, and might work.
+---
+
+*In new UI applications*, we recommend using a vector tile rendering library such as [MapBox GL JS](https://github.com/mapbox/mapbox-gl-js) with [React-map-gl](https://uber.github.io/react-map-gl/), or any other library capable of rendering [the MapBox vector tile format](https://docs.mapbox.com/vector-tiles/reference/). Also Leaflet has [plugins](https://leafletjs.com/plugins.html#vector-tiles) that purport to have Mapbox vector tile support, and might work.
 
 The only data a vector tile renderer needs is the TileJSON file of the style you want to render:
 
@@ -40,7 +42,9 @@ The only data a vector tile renderer needs is the TileJSON file of the style you
 
 This file contains the URLs of each style definition, along with URLs to the actual PBF tiles the renderer will load and render in the browser.
 
-2) *In existing Leaflet or Openlayers applications*, if you do not wish to use a vector layer renderer plugin, you may use the new tiles as raster tiles, i.e. rendered on our server. The styles above are available on the server as raster tiles as well, with tile URLs of the form `http://tiles.hel.ninja/styles/hel-osm-bright/{z}/{x}/{y}@2x@fi.png`. Here `{z}` is the zoom level, `{x}` and `{y}` the coordinates (which depend on the zoom level), `hel-osm-bright` the name of the style you want to render, `@2x` the bitmap size you want (for hi-res displays), and `@fi` the language you want rendered. (Do note that most Helsinki place names exist in Openstreetmap only in Finnish and Swedish, so OSM support for other languages is limited and you will get tiles with very little text.)
+---
+
+*In existing Leaflet or Openlayers applications*, if you do not wish to use a vector layer renderer plugin, you may use the new tiles as raster tiles, i.e. rendered on our server. The styles above are available on the server as raster tiles as well, with tile URLs of the form `http://tiles.hel.ninja/styles/hel-osm-bright/{z}/{x}/{y}@2x@fi.png`. Here `{z}` is the zoom level, `{x}` and `{y}` the coordinates (which depend on the zoom level), `hel-osm-bright` the name of the style you want to render, `@2x` the bitmap size you want (for hi-res displays), and `@fi` the language you want rendered. (Do note that most Helsinki place names exist in Openstreetmap only in Finnish and Swedish, so OSM support for other languages is limited and you will get tiles with very little text.)
 
 Therefore, getting raster OSM Helsinki map tiles in your existing Leaflet installation is as simple as (in react-leaflet)
 
@@ -54,6 +58,8 @@ render () {
     </Map>);
 }
 ```
+
+---
 
 If you notice any issues with any of the map styles above, please open an issue or create a PR in the corresponding map style repo: https://github.com/City-of-Helsinki/hel-osm-bright, https://github.com/City-of-Helsinki/hel-osm-light and https://github.com/City-of-Helsinki/hel-osm-high-contrast.
 
@@ -73,6 +79,8 @@ The geoservers listed above implement the *tiled* map standard WMTS, https://kar
 The foremost tiled map sets are the city map series (`Karttasarja_PKS`) used by default in https://kartta.hel.fi, the technical detail map (`Kantakartta`, https://kartta.hel.fi/?l=kantakartta), the aerial photograph (`Ortoilmakuva_2018_5cm`, https://kartta.hel.fi/?l=Ortoilmakuva_2018) and the current detail plan (`Ajantasa_asemakaava_maanpaallinen`, https://kartta.hel.fi/?l=Ajantasa_asemakaava_maanpaallinen_varillinen).
 
 Calls to a WMTS server are of the form `https://kartta.hel.fi/ws/geoserver/avoindata/gwc/service/wmts?layer=avoindata:{layer_name}&tilematrixset=ETRS-GK25&Service=WMTS&Request=GetTile&Version=1.0.0&TileMatrix=ETRS-GK25:{z}&TileCol={x}&TileRow={y}&Format=image/png`, where `layer_name` is any of the above, `{z}` is the zoom level (available zoom levels depend on the detail level of the layer; if you encounter blank tiles, try a higher zoom) and `{x}` and `{y}` the integer coordinates of the map tile. Also, the available format varies depending on the layer type (jpeg for aerial photographs, png otherwise). The applicable coordinate range depends on the zoom level and is returned by the server if you ask for a tile outside the map area. (ETRS-GK25 refers to the official Transverse Mercator coordinate system centered on the City of Helsinki meridian (25 degrees east), internationally known as [EPSG:3879](https://epsg.io/3879), to minimize measurement errors.) Similar calls apply for the HSY WMTS server.
+
+---
 
 What all this boils down to is that there are two steps to get the official map tiles up and running in your UI:
 
@@ -109,6 +117,8 @@ render () {
 }
 ```
 
+---
+
 *If the layer you wish to display is not available tiled*, you may still [render the entire WMS layer with Leaflet](https://leafletjs.com/examples/wms/wms.html), in which case the layer is loaded as a whole, with considerably lower performance:
 
 ```
@@ -134,6 +144,8 @@ In addition to bitmaps, City of Helsinki produces a huge amount of geographical 
 The servers that implement WFS are usually the same Geoservers that implement WMS, i.e. https://kartta.hel.fi/ws/geoserver/avoindata/wfs?service=wfs&version=1.1.0&request=GetCapabilities and https://kartta.hsy.fi/geoserver/wfs?service=wfs&version=1.1.0&request=GetCapabilities . These layers can be listed and displayed e.g. with [QGIS](https://docs.qgis.org/testing/en/docs/training_manual/online_resources/wfs.html).
 
 Interesting datasets include many of the polygon features you can plot on http://kartta.hel.fi, such as city divisions (https://kartta.hel.fi/?l=Karttasarja%2Ckaupunginosat, `avoindata:Kaupunginosajako` on WFS), plots as polygons (https://kartta.hel.fi/?l=kiinteistoalueet_set, `avoindata:Kiinteistot_alue` on WFS), buildings as polygons (https://kartta.hel.fi/?l=Karttasarja%2CRakennukset_alueina, `avoindata:Rakennukset_alue_rekisteritiedot` on WFS) and all manner of public areas such as parks, streets, benches, trashcans (various layers on https://kartta.hel.fi/, `avoindata:YLRE_Viheralue_alue` etc. on WFS). Descriptions of specific layers can often be found on our open data portal [HRI](https://hri.fi/data/group/59b85a25-5cf1-4eb8-a0b7-92ffe34efdad?res_format=WFS), and a list of all layers is at https://kartta.hel.fi/avoindata/dokumentit/Aineistolista_wfs_avoindata.html .
+
+---
 
 If you want to include these features in your UI, you have two options:
 
