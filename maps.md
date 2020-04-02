@@ -61,7 +61,7 @@ render () {
 
 ---
 
-If you notice any issues with any of the map styles above, please open an issue or create a PR in the corresponding map style repo: https://github.com/City-of-Helsinki/hel-osm-bright, https://github.com/City-of-Helsinki/hel-osm-light and https://github.com/City-of-Helsinki/hel-osm-high-contrast.
+If you notice any issues with any of the map styles above, or wish to suggest new features in the map styles, please open an issue or create a PR in the corresponding map style repo: https://github.com/City-of-Helsinki/hel-osm-bright, https://github.com/City-of-Helsinki/hel-osm-light and https://github.com/City-of-Helsinki/hel-osm-high-contrast. You may also  fork and create any new map styles suitable for your particular project, and contribute them for everybody in the city to use.
 
 Do note that (at least currently) our OSM tiles are only served in the Web Mercator coordinate system (https://en.wikipedia.org/wiki/Web_Mercator_projection, [EPSG:3857](https://epsg.io/3857)), so if you wish to use the local Helsinki coordinate system for exact measurement and representation of local areas and shapes, you will have to keep reading on below.
 
