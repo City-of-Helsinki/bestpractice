@@ -1,3 +1,3 @@
 # Best practices for developing for City of Helsinki
 
-This happy little repo aims to be place for the practical details for developing code for City of Helsinki. Currently it is a bit outdated, but we hope to fill in stuff such as how to do authentication and configuration.
+This documentation covers the practical details for developing open source code for the City of Helsinki. The target audience is software development consultants working in Helsinki projects as well as Helsinki software development staff. This documentation is produced jointly by the software developers of the Executive Office and the citys divisions. Not all practices stated here will apply to all projects within the city but these are intended as general outlines of best practices. If you wish to contribute, please make a pull request in the [GitHub repository](https://github.com/City-of-Helsinki/bestpractice).

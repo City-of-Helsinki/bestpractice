@@ -1,28 +1,12 @@
 # Coding standards
 
-## Architecture target
-
-There is a quite recent (if very ambiguous) description [in Teams](https://teams.microsoft.com/_#/apps/a2da8768-95d5-419e-9441-3b539865b118/pptx/viewer/teams/https:~2F~2Fhelsinginkaupunki.sharepoint.com~2Fsites~2FKUVAmuutostoimisto~2FJaetut%2520asiakirjat~2FDigiryhm%C3%A4n%2520kokoukset~2F2019~2F20190927~2FTavoitteet%2520-%2520Loogiset%2520arkkitehtuurit%2520-%252020190916.pptx?baseUrl=https:~2F~2Fhelsinginkaupunki.sharepoint.com~2Fsites~2Fkuvamuutostoimisto&fileId=%7BD83BB983-F9E8-403A-B11E-343CA8E55E34%7D&ctx=search&viewerAction=view&q=asiointipalveluiden%20arkkitehtuuri&threadId=19:97d0f252a1f3492696989ab9ec78ff70@thread.skype).
-
 ## Backend code standards
-
-- The standard tech stack for the backend is Python + Django.
-- Suggested versions for the new projects are Python 3.7 and Django 2.2 LTS.
-- Most of the projects use [Django REST framework](https://www.django-rest-framework.org/), but currently we started also to experiment with GraphQL, using [Graphene-Django](https://docs.graphene-python.org/projects/django/en/latest/). For example, the [backend of Venepaikka project](https://github.com/city-of-helsinki/berth-reservations) uses Graphene-Django.
-- We use [black](https://github.com/ambv/black) for Python code formatting. We follow the basic config, without any modifications. It should be required for new projects and is warmly welcome for the old ones.
-- We also use [isort](https://github.com/timothycrosley/isort) for keeping all the imports nice and clean. To make it compatible with black add the following line either to your project's setup.cfg file's `[isort]` section or to isort.cfg: bash multi_line_output=3 include_trailing_comma=True force_grid_wrap=0 use_parentheses=True line_length=88
-- Lastly, we ensure that [PEP-8 standards](https://www.python.org/dev/peps/pep-0008/) are upheld with the help of [flake8](http://flake8.pycqa.org/en/latest/).
 
 ### Python conventions
 
-*   Use [pep8](https://www.python.org/dev/peps/pep-0008/)
-    With the exceptions
-    that the closing brace/bracket/parenthesis on multi-line constructs must be lined
-    up under the first character of the line that starts the multi-line construct,
-    and the absolute maximum line length is 119 characters
-    if it increases readability.
-    The recommended line length for most cases is still 79.
-    https://www.python.org/dev/peps/pep-0008/#maximum-line-length
+- Newer projects use [black](https://github.com/ambv/black) for Python code formatting. We follow the basic config, without any modifications. It should be required for new projects and is warmly welcome for the old ones.
+- We also use [isort](https://github.com/timothycrosley/isort) for keeping all the imports nice and clean. To make it compatible with black add the following line either to your project's setup.cfg file's `[isort]` section or to isort.cfg: bash multi_line_output=3 include_trailing_comma=True force_grid_wrap=0 use_parentheses=True line_length=88
+- Lastly, we ensure that [PEP-8 standards](https://www.python.org/dev/peps/pep-0008/) are upheld with the help of [flake8](http://flake8.pycqa.org/en/latest/).
 
 *   Write [Pythonic code](https://speakerdeck.com/pyconslides/transforming-code-into-beautiful-idiomatic-python-by-raymond-hettinger-1),
     not [Java (< 5) with pep8](https://www.youtube.com/watch?v=wf-BqAjZb8M)
@@ -43,8 +27,6 @@ There is a quite recent (if very ambiguous) description [in Teams](https://teams
     ```
     (CC-BY-SA Raymond Hettinger)
 
-*   Use a code style checker like [flake8](https://pypi.python.org/pypi/flake8)
-
 *   Make [pytest](https://docs.pytest.org/en/latest/) tests,
     and run tests against latest released Python 3.
 
@@ -59,11 +41,9 @@ There is a quite recent (if very ambiguous) description [in Teams](https://teams
     the logging target (to stderr, file, syslog, or logging server).
     Do not use the warnings module.
 
-*   Use Travis for automatic testing
-
 *   Prepare the project for distribution in the same way as the
     [pypa sampleproject](https://github.com/pypa/sampleproject):
-    Write a setup.py, setup.cfg, README.rst,
+    Write a setup.py, setup.cfg, README.md,
     LICENSE (in most cases the MIT license)
     and .travis.yml files,
     create a directory for tests (named `tests`),
@@ -73,8 +53,6 @@ There is a quite recent (if very ambiguous) description [in Teams](https://teams
     but a standalone app requiring a more complex installation
     (like a Django project requiring a database setup etc.),
     you can skip the setup.py setup.cfg.
-
-*   Use semantic versions
 
 *   Use static typing for APIs instead of comments.
     That way IDEs can give better info, and we can do some static checking (so the type info will not get stale, unlike comments).
@@ -106,13 +84,11 @@ There is a quite recent (if very ambiguous) description [in Teams](https://teams
         PEP 3107 (function annotations),
         PEP 484 (defined format for annotations + comment annotations) and
         PEP 526 (syntax for variable annotations)
-    *   https://github.com/zulip/zulip is and example of
-        type annotated Django project.
 
 *   Use a doctest to illustrate use and also run the doctests
     (again, so that they won't get stale).
 *   Use https://docs.python.org/3/library/secrets.html for cryptographic needs, not the `random` module
-*   Use whitelists for reading `POST` data to avoid mass assignment problems https://coffeeonthekeyboard.com/mass-assignment-security-part-10-855/
+*   Use whitelists for reading `POST` data to avoid [mass assignment problems](https://coffeeonthekeyboard.com/mass-assignment-security-part-10-855/)
 *   Do not use truthiness to check for existence, since values like None, False, 0, and '' will fail the check.
     *   Use `is not None` or `not in iterable_instance` and so on, as appropriate
 *   Do not use assert for normal runtime checks (for example to validate incoming data)
@@ -125,82 +101,17 @@ There is a quite recent (if very ambiguous) description [in Teams](https://teams
         Coordinates never have different length, that would simply be a different data type,
         but different Django projects have different length of plugin lists even if *your* app's doesn't change.
 
-
-#### Hints
-
-Try ipython for exploration, ipdb for debugging and vmprof for profiling.
-
-#### Python Ideas
-
-* doctests
-* deployment options
-    * container image
-    * vagrant image
-    * git clone
-    * pip install from pypi
-    * wheels
-    * debs
-    * How much Python/Django knowledge is required?
-* state
-    * how to handle database migrations
-* docs
-    * formatting (md, rst)
-    * systems (sphinx, mkdocs)
-    * publication (rtd.org, hel.fi)
-    * API Swagger docs need to be made by hand until
-      https://github.com/encode/django-rest-framework/issues/4502 is fixed
-* cookiecutter
-* pip-tools, prequ
-* devpi for faster rebuilds
-* Specifying Django settings
-    * /etc, dotfile in user's home
-    * ENV
-    * command line options
-* even Django projects should be testable
-* codecov, not coveralls
-* Django database settings should have timeout to handle Kubernets services being down
-* check that imagemagick isn't used
-* Run tests with deprecation warnings on
-* https://pypi.python.org/pypi/check-manifest
-* namedtuples or attrs (https://github.com/python-attrs/attrs), https://pypi.python.org/pypi/aenum
-    * In Python 3.6:
-
-        from typing import NamedTuple
-
-        class Foo(NamedTuple):
-            """Foo is a very important class and
-            you should totally use it.
-            """
-            bar: int
-            baz: int = 0
-
-            def grand_total(self):
-                return self.bar + self.baz
-
-    * attrs:
-
-        import attr
-        @attr.s
-        class Point:
-            x = attr.ib(default=42)
-            y = attr.ib(default=attr.Factory(list))
-
-    * Tuples have problems where Point2D(x=12, y=15) == Time(h=12, m=15).
-      See https://github.com/ericvsmith/dataclasses/blob/master/pep-xxxx.rst
-
-
-
 ## Frontend code standards
 
 ### React/JSX style guide
 
-KuVa style guide follows [Airbnb's style guide for React/JSX](https://github.com/airbnb/javascript/blob/master/react/README.md) with few exceptions which are listed below.
+We follow [Airbnb's style guide for React/JSX](https://github.com/airbnb/javascript/blob/master/react/README.md) with few exceptions which are listed below.
 
-Main difference between KuVa and Airbnb style guides is in the file structure.
+The main difference between Helsinki and Airbnb style guides is in the file structure.
 
 ### Folder structure
 
-It is recommended to structure projects so that files are grouped together by feature or route. https://reactjs.org/docs/faq-structure.html
+It is recommended to [structure](https://reactjs.org/docs/faq-structure.html) projects so that files are grouped together by feature or route.
 
 If file count in a folder starts to get out of hand, it might be better to create subfolders for that folder (check `product/` in the image below). Then again you should avoid having [too much nesting](https://reactjs.org/docs/faq-structure.html#avoid-too-much-nesting).
 
@@ -284,14 +195,14 @@ domain/
 
 ### Naming
 
-Airbnb style guide has root component name as folder name and the folder has `index.jsx` file. This makes it possible to import the root component by just writing the folder name into import path. This is not something KuVa style guide recommends.
+Airbnb style guide has root component name as folder name and the folder has `index.jsx` file. This makes it possible to import the root component by just writing the folder name into import path. This is not something Helsinki style guide recommends.
 
-Example below shows the main difference between KuVa and Airbnb when importing *components*:
+Example below shows the main difference between Helsinki and Airbnb when importing *components*:
 
 ```javascript
 // Airbnb way
 import Footer from './Footer';
-// Kuva way
+// Helsinki way
 import Footer from './footer/Footer';
 ```
 
@@ -333,7 +244,6 @@ import Footer from './Footer';
 // good
 import Footer from './footer/Footer';
 ```
-
 
 ### General syntactic guides
 

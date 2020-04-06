@@ -8,9 +8,10 @@ Backend services
 ----------------
 
 - For most things: Python 3 with Django.
-  - Django REST framework for REST APIs
-  - graphene for GraphQL APIs
-  - Postgres / PostGIS for background databasees
+  - Suggested versions for the new projects are Python 3.7 and Django 2.2 LTS.
+  - [Django REST framework](https://www.django-rest-framework.org/) for REST APIs
+  - Graphene for GraphQL APIs, using [Graphene-Django](https://docs.graphene-python.org/projects/django/en/latest/).
+  - Postgres / PostGIS for background databases
 - For stateless GraphQL proxies / API gateways:
   - Node.js with Apollo
 - For serving static files of React apps:
