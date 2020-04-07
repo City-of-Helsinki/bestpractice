@@ -1,49 +1,50 @@
-# Project Management Practices When Using Scrum
+# Project management practices when using Scrum
 
-We use Scrum with planning, reviews, and retrospectives.  We also have
-issue-specific grooming sessions to prepare for sprint plannings.
+We use Scrum with planning, reviews, retrospectives and dailies.  We also have
+issue-specific refinement sessions to prepare for Sprint Plannings.
 
 ## Scrum practices
 
-* Backlog grooming: called separately to prepare well-sized and defined tickets for next sprint.
-  * split backlog items (stories) into tasks the size of at most two days.
-  * people can suggest stuff for raising on the backlog.
-  * will be done with small focused teams with a frontend dev, backend dev, designer and architect (and facilitator).
-* Planning: one half-day (or less) to decide on what to do next sprint
-  * See the sprint planning checklist below
-* Reviews: one hour to show the sprint increment to stakeholders and get feedback
-
+* Product Backlog Refinement: called separately to prepare well-sized and defined tickets for next sprint.
+  * Split Product Backlog Items (stories) into tasks the size of at most two days.
+  * People can suggest stuff for raising on the backlog.
+  * Will be done with small focused teams with a frontend dev, backend dev, designer and architect (and facilitator).
+* Sprint Planning: one half-day (or less) to decide on what to do next sprint
+  * See the Sprint Planning checklist below
+* Sprint Review: one hour to show the sprint increment to stakeholders and get feedback
   * Reviews are split by the service worked on
   * This is the place to make a final check on how the sprint went
-  * try to get comments and suggestions for further work
-* Retrospectives: one hour to improve on ways of working
-  * check on earlier retrospective items and how they are progressing
-  * tell things that suck in our way of working
-  * pick the most painful ones (e.g. by vote)
-  * decide what is to be done about them, when and by whom
+  * Try to get comments and suggestions for further work
+* Sprint Retrospective: one hour to improve on ways of working
+  * Check on earlier retrospective items and how they are progressing
+  * Tell things that suck in our way of working
+  * Pick the most painful ones (e.g. by vote)
+  * Decide what is to be done about them, when and by whom
+ * Daily Scrum: 15 minutes (or less) for the development team to plan the work for the day.
+   * For example, the Development Team members can each answer these 3 questions:
+     * What did I do yesterday to help the Development Team meet the Sprint Goal?
+     * What will I do today to help the Development Team meet the Sprint Goal?
+     * Do I see any impediment that prevents me or the Development Team from meeting the Sprint Goal?
 
-## Sprint planning checklist
+## Sprint Planning checklist
 
 Before planning:
-
   * Product owner has a suggestion of what to do in the next sprint
   * The suggestion adheres to the definition of ready
-
 After planning:
-
   * Sprint has a goal and is named after the goal (in Jira)
-  * sprint backlog is realistic
-  * sprint backlog produces the most value with the current sprint: most productive issues by value of implementing the issue divided by story points
-  * sprint backlog is ready for development (see the defitition of ready)
-  * team has a clear view of what will be done during the next two weeks
-  * issues in sprint have story points (0-7 each)
-    * issues that are expected to be more than a few days' work are split into smaller ones
+  * Sprint backlog is realistic
+  * Sprint backlog produces the most value with the current sprint: most productive issues by value of implementing the issue divided by story points
+  * Sprint backlog is ready for development (see the defitition of ready)
+  * Team has a clear view of what will be done during the next two weeks
+  * Issues in sprint have story points (0-7 each)
+    * Issues that are expected to be more than a few days' work are split into smaller ones
     * There should be 4-8 tasks per developer (as they should be of a maximum size of two days)
-  * team availability has been calculated (available developer-days / full sprint developer-days)
-    * full sprint worth of developer-days is typically 9 days * number of developers
-  * team capacity has been calculated (team velocity * team availability)
-  * sprint backlog contains team capacity worth of work
-  * sprint backlog is documented in Jira
+  * Team availability has been calculated (available developer-days / full sprint developer-days)
+    * Full sprint worth of developer-days is typically 9 days * number of developers
+  * Team capacity has been calculated (team velocity * team availability)
+  * Sprint backlog contains team capacity worth of work
+  * Sprint backlog is documented in Jira
 
 ## Definition of Ready
 
@@ -52,50 +53,50 @@ The definition of ready (DoR) is a requirement list for an issue to consider "im
 To be considered for implementation, an issue must have
 
   * For features: [see the template](https://helsinkisolutionoffice.atlassian.net/browse/KUVA-358)
-    * user story: once the feature is implemented, who will be able to do what, and how?
-    * description of how it works (what actually happens in the story, in a technical sense)
-    * acceptance criteria
-    * descriptions of handling of special situations
-    * designs (for frontend/UI features)
-    * state charts / flowcharts (for many-phase UI features)
-    * background services needed
-    * where is the information available?
-    * example API calls and how to test them
+    * User story: once the feature is implemented, who will be able to do what, and how?
+    * Description of how it works (what actually happens in the story, in a technical sense)
+    * Acceptance criteria
+    * Descriptions of handling of special situations
+    * Designs (for frontend/UI features)
+    * State charts / flowcharts (for many-phase UI features)
+    * Background services needed
+    * Where is the information available?
+    * Example API calls and how to test them
     * Translations for texts (and l10n in general) (for UI features that have localisation)
-    * firewall openings (for backend features)
+    * Firewall openings (for backend features)
   * For bugs:  [see the template](https://helsinkisolutionoffice.atlassian.net/browse/KUVA-359)
-    * directions for reproducing the bug
-    * what should have happened instead
+    * Directions for reproducing the bug
+    * What should have happened instead
 
 ## Definition of Done
 
-The Definition of Done (DoD) is a specification of what needs to be done for an issue to be considered "Done" = not in need of development anymore. This page collects suggestions for items on the DoD; they are disputable and not everything applies to every issue.
+The Definition of Done (DoD) is a specification of what needs to be done for an issue to be considered "Done" = not in need of development anymore. This document collects suggestions for items on the DoD; they are disputable and not everything applies to every issue.
 
 To be considered Done, an issue must have
 
-  * an implementation
-  * regression tests for the happy path and most common error cases
-  * documentation updated (preferably machine readable documentation; see the documentation practices)
-  * accessibility taken into account (works without mouse, works with WCAG guidelines)
-  * all components offered to Helsinki Design System
-  * does not degrade performance (automatic tests on CI?)
-  * localisation infrastructure in place for user-visible text that is in some language
-  * code review done, code reviewer checklist:
+  * An implementation
+  * Regression tests for the happy path and most common error cases
+  * Documentation updated (preferably machine readable documentation; see the documentation practices)
+  * Accessibility taken into account (works without mouse, works with WCAG guidelines)
+  * All components offered to Helsinki Design System
+  * Does not degrade performance (automatic tests on CI?)
+  * Localisation infrastructure in place for user-visible text that is in some language
+  * Code review done, code reviewer checklist:
     * Coding style neat
     * Test coverage ok
-    * code architecture sensible
-    * security handled properly (input validation etc, OWASP top 10)
-    * other things in DoD done
+    * Code architecture sensible
+    * Security handled properly (input validation etc, OWASP top 10)
+    * Other things in DoD done
   * UX review done (check with designer that the UI/API/whatever works as it should)
-  * leftover tasks made into issues
+  * Leftover tasks made into issues
 
 ## Responsibilities of Scrum Masters
 
 Ensure that we follow agile principles and scrum to your best abilities:
 
-  * Organise and facilitate scrum ceremonies: Daily Standup, Sprint planning, Sprint review and Sprint retrospective
-  * Assist Product Owner with keeping backlog in order
-  * If insufficient number of issues in backlog fulfill the DoR, make PO enrich them and arrange a backlog grooming/refinement for upcoming work
+  * Organise and facilitate Scrum events: Daily Scrum, Sprint Planning, Sprint Review and Sprint Retrospective
+  * Assist Product Owner with keeping the Product Backlog in order
+  * If insufficient number of issues in backlog fulfill the DoR, make PO enrich them and arrange a backlog refinement for upcoming work
   * During sprint: see that the sprint is proceeding at least somewhat according to the plan; raise the issue and investigate reasons
     *   Check that reviews are being done quickly (check their WIP) - remind developers to push stuff into review, preferably f2f with the reviewer
     *   Check that PO is accepting reviewed work (check “acceptance” WIP) - remind developers to push issues into acceptance
