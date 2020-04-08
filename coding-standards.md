@@ -5,8 +5,15 @@
 ### Python conventions
 
 - Newer projects use [black](https://github.com/ambv/black) for Python code formatting. We follow the basic config, without any modifications. It should be required for new projects and is warmly welcome for the old ones.
-- We also use [isort](https://github.com/timothycrosley/isort) for keeping all the imports nice and clean. To make it compatible with black add the following line either to your project's setup.cfg file's `[isort]` section or to isort.cfg: bash multi_line_output=3 include_trailing_comma=True force_grid_wrap=0 use_parentheses=True line_length=88
-- Lastly, we ensure that [PEP-8 standards](https://www.python.org/dev/peps/pep-0008/) are upheld with the help of [flake8](http://flake8.pycqa.org/en/latest/).
+- We also use [isort](https://github.com/timothycrosley/isort) for keeping all the imports nice and clean. To make it compatible with black add the following line either to your project's setup.cfg file's `[isort]` section or to isort.cfg: 
+```
+bash multi_line_output=3 
+include_trailing_comma=True 
+force_grid_wrap=0 
+use_parentheses=True 
+line_length=88
+```
+- Ensure that [PEP-8 standards](https://www.python.org/dev/peps/pep-0008/) are upheld with the help of [flake8](http://flake8.pycqa.org/en/latest/).
 
 *   Write [Pythonic code](https://speakerdeck.com/pyconslides/transforming-code-into-beautiful-idiomatic-python-by-raymond-hettinger-1),
     not [Java (< 5) with pep8](https://www.youtube.com/watch?v=wf-BqAjZb8M)
@@ -28,7 +35,7 @@
     (CC-BY-SA Raymond Hettinger)
 
 *   Make [pytest](https://docs.pytest.org/en/latest/) tests,
-    and run tests against latest released Python 3.
+    and run tests against latest released Python 3. Run tests with deprecation warnings on.
 
 *   Use [pyenv](https://github.com/pyenv/pyenv) to install up to date (or older!) Python versions not available in your distribution repos
 
@@ -54,7 +61,7 @@
     (like a Django project requiring a database setup etc.),
     you can skip the setup.py setup.cfg.
 
-*   Use static typing for APIs instead of comments.
+*   Use static typing for functions instead of comments.
     That way IDEs can give better info, and we can do some static checking (so the type info will not get stale, unlike comments).
 
     *   Not like this:
@@ -87,7 +94,7 @@
 
 *   Use a doctest to illustrate use and also run the doctests
     (again, so that they won't get stale).
-*   Use https://docs.python.org/3/library/secrets.html for cryptographic needs, not the `random` module
+*   Use the [secrets module](https://docs.python.org/3/library/secrets.html) for cryptographic needs, not the `random` module
 *   Use whitelists for reading `POST` data to avoid [mass assignment problems](https://coffeeonthekeyboard.com/mass-assignment-security-part-10-855/)
 *   Do not use truthiness to check for existence, since values like None, False, 0, and '' will fail the check.
     *   Use `is not None` or `not in iterable_instance` and so on, as appropriate
@@ -100,12 +107,23 @@
     *   Compare the concepts of coordinates (always `(x, y)`, `(x, y, z)` etc.) to a list of Django plugins.
         Coordinates never have different length, that would simply be a different data type,
         but different Django projects have different length of plugin lists even if *your* app's doesn't change.
+* Django database settings should have timeout to handle Kubernets services being down
+* check that imagemagick isn't used
 
 ## Frontend code standards
 
+Use yarn and webpack, not bower or grunt. Additional webpack modules need to go through architecture review.
+
+Do not include node\_modules in source. If you need to build something custom, build it properly 
+so that any (sub)dependencies do not get locked.
+If you need to patch upstream versions, make PRs upstream and document the related PR to 
+the repo so that the hacked version can be changed back to the official one later.
+
+For React, use Redux as the store, redux-actions and redux-promise, saga or thunk. Separate API HTTP calls to a separate module/file.
+
 ### React/JSX style guide
 
-We follow [Airbnb's style guide for React/JSX](https://github.com/airbnb/javascript/blob/master/react/README.md) with few exceptions which are listed below.
+We follow [Airbnb's style guide for React/JSX](https://github.com/airbnb/javascript/blob/master/react/README.md) with few exceptions which are listed below. Use eslint with airbnb style guide.
 
 The main difference between Helsinki and Airbnb style guides is in the file structure.
 
@@ -247,7 +265,7 @@ import Footer from './footer/Footer';
 
 ### General syntactic guides
 
-- **Promises**: Try to use await/async when possible.
+- **Promises**: Try to use await/async when possible. [Use await/async instead of Promises](https://mathiasbynens.be/notes/async-stack-traces).
 
 ```javascript
 // bad
@@ -285,3 +303,4 @@ Use `finally` to avoid code duplication and to semantically
 separate cleanup from the other parts.
 
 If you need to run the Promises in parallel, use `Promise.all()` (or `Promise.race()`).
+
