@@ -6,6 +6,7 @@
 * The branching model in use for KuVa projects is Gitflow. Refer to section [Git Workflow](#git-workflow) below for a more detailed explanation.
 * Releases are versioned using [semantic versioning](https://semver.org).
   * Note that "API changes" means e.g. breaking URL's that used to work!
+* Document changes in a changelog or in Github release notes. [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) offers a good model for informing users about changes in a release.
 
 ### Commits, Pull Requests and Messages
 * Commit as often as possible, but usually not when the code is broken (doesn't work)
