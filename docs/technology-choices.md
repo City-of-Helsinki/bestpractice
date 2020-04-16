@@ -1,5 +1,4 @@
-Technology choices
-==================
+# Technology choices
 
 Document about the tech stack used for developing code in the City of
 Helsinki.
