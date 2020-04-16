@@ -8,9 +8,8 @@ const themeConfig = {
 };
 
 const menu = [
-  {
-    name: "APIs",
-  },
+  "Helsinki Developers",
+  "APIs",
   "Best practices",
 ];
 
