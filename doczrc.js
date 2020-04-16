@@ -8,7 +8,6 @@ const themeConfig = {
 };
 
 const menu = [
-  "Helsinki Developers",
   {
     name: "APIs",
   },
