@@ -19,13 +19,11 @@ jobs:
 
       - name: install dependencies
         run: yarn
-        working-directory: ./site
 
       - name: build docz site
         run: |
           yarn build
           ./check_build.sh
-        working-directory: ./site
         env:
           DOCZ_BASE: /bestpractice/
 
@@ -34,5 +32,5 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_branch: gh-pages
-          publish_dir: ./site/public
+          publish_dir: ./public
           script_mode: true'
