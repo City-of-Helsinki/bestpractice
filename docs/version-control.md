@@ -1,3 +1,9 @@
+---
+name: Practices for Version Control
+menu: Best practices
+route: /version-control
+---
+
 # Practices for Version Control
 
 ## General Information and Practices

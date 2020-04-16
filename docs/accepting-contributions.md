@@ -1,3 +1,9 @@
+---
+name: Practices for Accepting Third Party Contributions
+menu: Best practices
+route: /accepting-contributions
+---
+
 # Practices for Accepting Third Party Contributions
 
 We try to be good players for the open source community and so we should

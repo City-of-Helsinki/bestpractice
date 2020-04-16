@@ -1,3 +1,9 @@
+---
+name: Project management practices when using Scrum
+menu: Best practices
+route: /scrum-project-management
+---
+
 # Project management practices when using Scrum
 
 We use Scrum with planning, reviews, retrospectives and dailies.  We also have
