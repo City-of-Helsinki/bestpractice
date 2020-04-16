@@ -34,8 +34,8 @@ This project uses the [Gitflow](https://nvie.com/posts/a-successful-git-branchin
 Instead of using a single master branch, Gitflow uses two separate branches; master, and develop. The master branch is used for deploying code to production and the develop branch is used for integrating new features into the code-base.
 
 <p>
-  <img width="75%" src="https://wac-cdn.atlassian.com/dam/jcr:2bef0bef-22bc-4485-94b9-a9422f70f11c/02%20(2).svg">
-  <br>
+  <img width="75%" src="https://wac-cdn.atlassian.com/dam/jcr:2bef0bef-22bc-4485-94b9-a9422f70f11c/02%20(2).svg"/>
+  <br />
   <em>Tags are created for each release on the master branch.</em>
 </p>
 
@@ -43,7 +43,7 @@ Instead of using a single master branch, Gitflow uses two separate branches; mas
 Each new feature should be developed in a separate feature branch. When a feature has been implemented the developer should create a Pull request on Github towards the develop branch. Each Pull request must be approved by at least one (1) developer before it can be merged. Please note that developers may not approve their own Pull requests.
 
 <p>
-  <img width="75%" src="https://wac-cdn.atlassian.com/dam/jcr:b5259cce-6245-49f2-b89b-9871f9ee3fa4/03%20(2).svg">
+  <img width="75%" src="https://wac-cdn.atlassian.com/dam/jcr:b5259cce-6245-49f2-b89b-9871f9ee3fa4/03%20(2).svg"/>
 </p>
 
 #### Release Branches
@@ -55,8 +55,8 @@ Create a new branch locally that branches out from the develop branch Push the n
 [comment]: # (TODO: Document what kind of changes are allowed in Release branches. This should probably be aligned with the changes allowed for Hotfix branches.)
 
 <p>
-  <img width="75%" src="https://wac-cdn.atlassian.com/dam/jcr:a9cea7b7-23c3-41a7-a4e0-affa053d9ea7/04%20(1).svg">
-  <br>
+  <img width="75%" src="https://wac-cdn.atlassian.com/dam/jcr:a9cea7b7-23c3-41a7-a4e0-affa053d9ea7/04%20(1).svg"/>
+  <br />
   <em>Release branches allow for bug fixes before releasing to production.</em>
 </p>
 
@@ -70,8 +70,8 @@ To create a hotfix:
 [comment]: # (TODO: Document what kind of changes are allowed in Hotfix branches.)
 
 <p>
-  <img width="75%" src="https://wac-cdn.atlassian.com/dam/jcr:61ccc620-5249-4338-be66-94d563f2843c/05%20(2).svg">
-  <br>
+  <img width="75%" src="https://wac-cdn.atlassian.com/dam/jcr:61ccc620-5249-4338-be66-94d563f2843c/05%20(2).svg"/>
+  <br />
   <em>Hotfix branches allow for bug fixes to the production environment.</em>
 </p>
 
@@ -86,8 +86,8 @@ Example:
 * Someone creates a new hotfix branch named hotfix/2.3.2
 
 <p>
-  <img width="75%" src="https://wac-cdn.atlassian.com/dam/jcr:2bef0bef-22bc-4485-94b9-a9422f70f11c/02%20(2).svg">
-  <br>
+  <img width="75%" src="https://wac-cdn.atlassian.com/dam/jcr:2bef0bef-22bc-4485-94b9-a9422f70f11c/02%20(2).svg" />
+  <br />
   <em>Tagging releases once a release or hotfix has been merged into master, the commit should be tagged. If the branch name was hotfix/2.3.1, the tag should be 2.3.1.</em>
 </p>
 
