@@ -9,7 +9,7 @@ route: /apis/statistics
 
 Query the city's statistical databases
 
-API location: http://dev.hel.fi/stats/resources/
+API location: [http://dev.hel.fi/stats/resources/](http://dev.hel.fi/stats/resources/)
 
 Code and visualization examples can be found here.
 API description (subject to change):
@@ -76,4 +76,4 @@ Get data as JSON-stat:
     /resources/[dataset path]/jsonsta
 ```
 
-[http://dev.hel.fi/stats/](Follow this link for API)
+[Follow this link for API](http://dev.hel.fi/stats/)

@@ -9,7 +9,7 @@ route: /apis/linked-courses
 
 Aggregates data about courses around the city. Based on Linked Events.
 
-API location: <https://api.hel.fi/linkedcourses/v1/>
+API location: [https://api.hel.fi/linkedcourses/v1/](https://api.hel.fi/linkedcourses/v1/)
 
 Linked Courses provides categorized data on courses and places for the City of Helsinki. It serves as the common course database for all Helsinki city divisions.
 
