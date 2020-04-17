@@ -9,7 +9,7 @@ route: /version-control
 ## General Information and Practices
 * We use Git for version control which is a modern distributed version control system suitable for projects of any size.
 * Source code repositories are hosted on GitHub, under the organization City-of-Helsinki.
-* The branching model in use for KuVa projects is Gitflow. Refer to section [Git Workflow](#git-workflow) below for a more detailed explanation.
+* The branching model in use for projects is Gitflow. Refer to section [Git Workflow](#git-workflow) below for a more detailed explanation.
 * Releases are versioned using [semantic versioning](https://semver.org).
   * Note that "API changes" means e.g. breaking URL's that used to work!
 
@@ -97,3 +97,4 @@ Example:
   <em>Tagging releases once a release or hotfix has been merged into master, the commit should be tagged. If the branch name was hotfix/2.3.1, the tag should be 2.3.1.</em>
 </p>
 
+**Images are licenced under [Creative Commons Attribution 2.5 Australia License](http://creativecommons.org/licenses/by/2.5/au/). Source [Atlassian](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).**
