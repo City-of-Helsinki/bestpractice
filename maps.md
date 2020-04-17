@@ -3,7 +3,7 @@ Map layers (how to get Helsinki map tiles into your UI)
 
 The City of Helsinki provides three types of map APIs for adding City of Helsinki maps and data to your fancy new React project with e.g. the Leaflet library (https://react-leaflet.js.org/) or the Mapbox vector tile renderer (https://uber.github.io/react-map-gl/).
 
-For questions, problems or suggestions to this guide, please contact us on https://gitter.im/City-of-Helsinki/heldev, #paikkatieto channel on City of Helsinki Slack (if you are a member), or by email at dev@hel.fi. Regarding data on the kartta.hel.fi server, please contact paikkatieto@hel.fi, and data on the kartta.hsy.fi server, please contact asiakaspalvelu@hsy.fi.
+For questions, problems or suggestions to this guide, please contact us on https://gitter.im/City-of-Helsinki/heldev, #paikkatieto channel on City of Helsinki Slack (if you are a member), by email at dev@hel.fi, or directly as Github issues in the best practices repo https://github.com/City-of-Helsinki/bestpractice. Regarding data on the kartta.hel.fi server, please contact paikkatieto@hel.fi, and data on the kartta.hsy.fi server, please contact asiakaspalvelu@hsy.fi.
 
 The supported map data types are
 
