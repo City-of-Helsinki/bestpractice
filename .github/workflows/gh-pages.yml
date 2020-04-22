@@ -24,8 +24,6 @@ jobs:
         run: |
           yarn build
           ./check_build.sh
-        env:
-          DOCZ_BASE: /bestpractice/
       
       - name: Copy CNAME file
         run: cp CNAME public/
