@@ -1,0 +1,29 @@
+{
+  "name": "site",
+  "version": "0.5.5",
+  "private": true,
+  "description": "Documentation for Helsinki Developers",
+  "license": "MIT",
+  "workspaces": {
+    "nohoist": [
+      "gatsby",
+      "gatsby/**"
+    ]
+  },
+  "scripts": {
+    "start": "docz dev",
+    "build": "rimraf .docz/ public/ && docz build"
+  },
+  "dependencies": {
+    "docz": "^2.0.0-rc.67",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "swagger-ui-react": "^3.25.0"
+  },
+  "devDependencies": {
+    "hds-core": "0.4.1",
+    "hds-react": "0.5.4",
+    "react-helmet": "^5.2.1",
+    "rimraf": "^3.0.0"
+  }
+}

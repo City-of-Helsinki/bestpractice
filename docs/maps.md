@@ -1,5 +1,10 @@
-Map layers (how to get Helsinki map tiles into your UI)
-=======================================================
+---
+name: Map layers (how to get Helsinki map tiles into your UI)
+menu: Best practices
+route: /maps
+---
+
+# Map layers (how to get Helsinki map tiles into your UI)
 
 The City of Helsinki provides three types of map APIs for adding City of Helsinki maps and data to your fancy new React project with e.g. the Leaflet library (https://react-leaflet.js.org/) or the Mapbox vector tile renderer (https://uber.github.io/react-map-gl/).
 

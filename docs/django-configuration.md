@@ -1,3 +1,9 @@
+---
+name: Configuration for City of Helsinki Django projects
+menu: Best practices
+route: /django-configuration
+---
+
 # Configuration for City of Helsinki Django projects
 
 Configuration for all new projects should be done using environment variables if at all possible.

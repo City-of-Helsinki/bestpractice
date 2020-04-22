@@ -1,3 +1,9 @@
+---
+name: Coding standards
+menu: Best practices
+route: /coding-standards
+---
+
 # Coding standards
 
 ## Backend code standards

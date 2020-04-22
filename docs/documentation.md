@@ -1,4 +1,11 @@
+---
+name: Documentation practices
+menu: Best practices
+route: /documentation
+---
+
 # Documentation practices
+
 ## What should README.md contain?
 * Short description of what the service or product is
 * Installation instructions

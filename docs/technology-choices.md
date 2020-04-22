@@ -1,5 +1,10 @@
-Technology choices
-==================
+---
+name: Technology choices
+menu: Best practices
+route: /technology-choices
+---
+
+# Technology choices
 
 Document about the tech stack used for developing code in the City of
 Helsinki.
