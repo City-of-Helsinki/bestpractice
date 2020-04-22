@@ -26,7 +26,10 @@ jobs:
           ./check_build.sh
         env:
           DOCZ_BASE: /bestpractice/
-
+      
+      - name: Copy CNAME file
+        run: cp CNAME public/
+      
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
