@@ -8,9 +8,11 @@ const themeConfig = {
 };
 
 const menu = [
-  "Helsinki Developers",
-  "APIs",
   "Best practices",
+  "APIs",
+  "Resources",
+  "Contribute", 
+  "Contact"
 ];
 
 export default {
