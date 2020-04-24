@@ -4,7 +4,16 @@ This documentation covers the practical details for developing open source code 
 
 The site is built with [docz](https://www.docz.site/).
 
-## Getting started
+## Deployments
+Production environment: https://developer.hel.ninja/
+
+## Issue tracking
+Jira: https://helsinkisolutionoffice.atlassian.net/projects/DEV/issues/?filter=allissues
+
+## Contributing
+See [contributing.md](.github/contributing.md).
+
+## Development
 
 ### Run the dev env
 
@@ -40,6 +49,3 @@ If everything goes well, you'll find the static site at `public/`.
 ### App configuration
 
 Docz configuration is handled via the [`doczrc.js`](doczrc.js). Follow the [Project Configuration reference](https://www.docz.site/docs/project-configuration).
-
-## Contributing
-See [contributing.md](.github/contributing.md).
