@@ -10,6 +10,7 @@ route: /onboardee-checklist
 
 * [Get started here](#get-started-here)
 * [Understand City of Helsinki organization as a developer](#understand-city-of-helsinki-organization-as-a-developer)
+* [Ensure that you have access to essential services you need as a developer](#ensure-that-you-have-access-to-essential-services-you-need-as-a-developer)
 
 <!-- vim-markdown-toc -->
 
@@ -35,18 +36,23 @@ route: /onboardee-checklist
 * There's plenty of collaboration between KuVa and Kanslia as some of the services developed by Kanslia and deployed in Kanlisa are heavily used by some KuVa services, for example.
 * Your onboader on the first day should tell you whether you're working in KuVa or Kanslia, if location of office or other things haven't given it away already 😀
 
-- choose which email address, Github account, and (maybe) Gitlab account
-  you will be using for your work with us.
-  - tell them to your onboarder to get various accesses
-- install Slack and Teams applications (for videoconfs)
-- check that you can get to the following services (ask for access if
-  not):
-  - https://helsinkicity.slack.com/
-  - https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/overview
-  - https://gitlab.com/City-of-Helsinki/KuVa
-  - https://github.com/orgs/City-of-Helsinki/teams/kuva-developers/repositories
-  - see rest of setup instructions in
-    https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/851980/Services+and+accounts+for+new+developers
+### Ensure that you have access to essential services you need as a developer
+* Choose an email address of your own that you'd like to use for working in City of Helsinki.
+    * Unless you're working for City of Helsinki itself, as a developer, you won't get hel.fi email accounts, but this is being reconsiderred.
+* Choose your Github and Gitlab username that you'd like to use for working in City of Helsinki.
+* Give your email and Github and Gitlab usernames to your **onbaorder** so they can give you access to:
+    * [City of Helsinki Slack](https://helsinkicity.slack.com/)
+    * [KuVa's Atlassian for Jira, Confluence, etc](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/overview)
+    * [KuVa's Gitlab](https://gitlab.com/City-of-Helsinki/KuVa)
+    * [KuVa's Github](https://github.com/orgs/City-of-Helsinki/teams/kuva-developers/members)
+* Skim through [this page in Jira](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/851980/Services+and+accounts+for+new+developers) and see if any of
+the items there are relavent to you as well.
+
+   * We should ideally remove that page and move its `onboardee` items to here, and it's `onboarder` items to [onboarder's checklist](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/416940090/Onboarding+checklist).
+
+* [Optional] City of Helsinki heavily uses Jira, Slack, and Teams for tasks management and video calls.
+You may want to install native clients of those for your operating system or bookmark them for easier access.
+
 - have you got a tutor?  You should!
   - your tutor is the first one to contact about any questions
   - they also have a checklist:
