@@ -4,7 +4,7 @@ menu: Best practices
 route: /onboardee-checklist
 ---
 
-# Onboarding checklist for development projects
+## New developer to the team? Welcome! 👋
 
 This is the onboarding list for you.  The checklist contains the high
 level elements you’ll be doing when you start, and you can already have
