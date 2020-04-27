@@ -9,6 +9,7 @@ route: /onboardee-checklist
 <!-- vim-markdown-toc GFM -->
 
 * [Get started here](#get-started-here)
+* [Understand City of Helsinki organization as a developer](#understand-city-of-helsinki-organization-as-a-developer)
 
 <!-- vim-markdown-toc -->
 
@@ -21,6 +22,18 @@ route: /onboardee-checklist
 * It is fine if you spend ~2 working days to complete this checklist. Or more if needed by letting your tutor know.
 * Please consider updating this checklist once you feel you're settled here to prevent this going out of date and causing new team members confusion and hassles.
 
+### Understand City of Helsinki organization as a developer
+![City of Helsinki organization as a developer](../static/city_of_helsinki.png)
+* City of Helsinki has plenty of **separate** departments, from which the most important ones you'll be dealing with are **KuVa** and **Kanslia**.
+* KuVa (Kulttuuri ja Vapaa-aika) is the Culture and Leisure department and Kanslia (Kaupunginkanslia) is the City Hall department.
+* KuVa and Kanslia both have:
+    * Their own budgets
+    * Their own development goals
+    * Their own office space
+    * Their own developers
+    * Their own infrastructure they deploy their services to
+* There's plenty of collaboration between KuVa and Kanslia as some of the services developed by Kanslia and deployed in Kanlisa are heavily used by some KuVa services, for example.
+* Your onboader on the first day should tell you whether you're working in KuVa or Kanslia, if location of office or other things haven't given it away already 😀
 
 - choose which email address, Github account, and (maybe) Gitlab account
   you will be using for your work with us.
