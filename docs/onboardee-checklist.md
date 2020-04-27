@@ -6,15 +6,21 @@ route: /onboardee-checklist
 
 ## New developer to the team? Welcome! 👋
 
-This is the onboarding list for you.  The checklist contains the high
-level elements you’ll be doing when you start, and you can already have
-a look if you wish, but you’ll be given time to go through them on your
-first day(s).
+<!-- vim-markdown-toc GFM -->
 
-This guide and all its links should take you at least 1-2 working days
-to read and setup. Once it’s over, and as mentioned near the end of the
-guide, contact your tutor and he/she will assign you a project and give
-you a simple task to get started with.
+* [Get started here](#get-started-here)
+
+<!-- vim-markdown-toc -->
+
+### Get started here
+
+* This is an onboarding checklist for software developers who join City of Helsinki to get them started!
+* The ultimate goal of this checklist is to get you from the moment you start working here to taking a dev ticket as smoothly as possible 🧡
+* The expectation is that you would be **proactive** and read and implement the steps in this checklist pragmatically.
+* We know there's plenty of things you need to setup, and therefore we won't ask you to take a dev ticket before you tell us that you're done with this checklist ✅
+* It is fine if you spend ~2 working days to complete this checklist. Or more if needed by letting your tutor know.
+* Please consider updating this checklist once you feel you're settled here to prevent this going out of date and causing new team members confusion and hassles.
+
 
 - choose which email address, Github account, and (maybe) Gitlab account
   you will be using for your work with us.
