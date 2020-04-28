@@ -14,8 +14,11 @@ route: /onboardee-checklist
 * [Ensure that you have setup all that is required to operate within a team](#ensure-that-you-have-setup-all-that-is-required-to-operate-within-a-team)
 * [Get to know people!](#get-to-know-people)
 * [Get a general sense of how we develop software in City of Helsinki](#get-a-general-sense-of-how-we-develop-software-in-city-of-helsinki)
+* [Get your service up and running](#get-your-service-up-and-running)
 
 <!-- vim-markdown-toc -->
+
+----
 
 ### Get started here
 
@@ -83,18 +86,17 @@ you feel their work is interesting and ask them what they're doing work-wise for
 * You can read the main page of the document practices completely, and **sneak peak** into the linked children pages to get the high level image you'd need and be
 able to get back to them later upon need.
 
-- read and make sure you've understood your service's documentation
-  - see appropriate page in
-    https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/655463/Services
-  - see your project's README.md files
-  - test your service
-  - see that the docs adhere to
-    https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753772/Documentation+practices
-  - fix missing parts
-- are you able to set up a development environment for what you're developing,
-  where you can actually log in and see your changes?
-  - did you get it working with docs?
-  - if not, fix/write docs
+### Get your service up and running
+* Each service developed in City of Helsinki has a purpose and you should familiaze yourself with this purpose
+[for the service you're going to develop](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/655463/Services).
+* Get the local development environment of the repository you'll be coding in up and running **using README.md**
+    * **This is an important step** because it would not make sense to start coding a feature if a new team member cannot effortlessly get the dev env up and
+    running based on README.md instructions.
+    * If you didn't manage to get it running with README.md instructions, please take ownership of the repository straight away and update the README.md with the steps
+    necessary so that the next developer doesn't have to get *unwritten knowledge* to be able to get the dev env up and running.
+* Ensure that the items within "*what should README.md contain?*" section of
+[documentation practices](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753772/Documentation+practices) are already taken care of, or write them yourself if they aren't.
+
 - at this point, you can ask your tutor to get assigned a task of
   sensible difficulty
   - check with your tutor that they think what you're doing is how it
