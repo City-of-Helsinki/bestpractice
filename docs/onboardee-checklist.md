@@ -19,6 +19,7 @@ route: /onboardee-checklist
 
 * This is an onboarding checklist for software developers who join City of Helsinki to get them started!
 * The ultimate goal of this checklist is to get you from the moment you start working here to taking a dev ticket as smoothly as possible 🧡
+* This checklist is meant to complement the physical developer onboarding meeting which happens in the first half of the day of your 1st day.
 * The expectation is that you would be **proactive** and read and implement the steps in this checklist pragmatically.
 * We know there's plenty of things you need to setup, and therefore we won't ask you to take a dev ticket before you tell us that you're done with this checklist ✅
 * It is fine if you spend ~2 working days to complete this checklist. Or more if needed by letting your tutor know.
