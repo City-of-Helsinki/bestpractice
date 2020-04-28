@@ -12,6 +12,7 @@ route: /onboardee-checklist
 * [Understand City of Helsinki organization as a developer](#understand-city-of-helsinki-organization-as-a-developer)
 * [Ensure that you have access to essential services you need as a developer](#ensure-that-you-have-access-to-essential-services-you-need-as-a-developer)
 * [Ensure that you have setup all that is required to operate within a team](#ensure-that-you-have-setup-all-that-is-required-to-operate-within-a-team)
+* [Get to know people!](#get-to-know-people)
 
 <!-- vim-markdown-toc -->
 
@@ -64,25 +65,21 @@ You may want to install native clients of those for your operating system or boo
 * Based on the team you've joined in your physical developer onboarding meeting, ensure that you know exactly which team's daily and
 sprint demo/retro/planning/refinement you should join on your calendar.
 
-- have you got a tutor?  You should!
-  - your tutor is the first one to contact about any questions
-  - they also have a checklist:
-    https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/416940090/Onboarding+checklist
+### Get to know people!
+* You should have been assigned a tutor by your onboarder in the physical developer onboarding meeting.
+* Your tutor is your go-to buddy and you can ask all your questions from them.
+* Write a few lines to introduce yourself to everyone in `#kuva-aok` Slack channel.
+* Your team members should ideally pick you up for lunch themselves, but in the hopefully-unlikely scenario that they forget, feel free to ask and tag along with them! 👍
+* If you feel like you got jokes or opinions you want to share, `#ratkis-kitchenette` is the fun 😀 slack channel and the place to be!
+* You can also take a look at the list of [people working here](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753891/People) and contact some/any of them
+you feel their work is interesting and ask them what they're doing work-wise for example!
+
 - read and make sure you've understood development practices:
   - https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/65679/Development+practices
   - at least the main page, and check that you know approximately what
     kind of information there is so you can get back to it upon need
   - ask for clarifications if something is unclear
   - fix missing parts
-- get to know people
-  - write a short (say couple of lines) introduction about yourself to
-    #kuva-aok
-  - get people to join you for lunch
-  - start an opinionated discussion about whatever on
-    #ratkis-kitchenette
-  - contact a random person outside your team (see
-    https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753891/People)
-    and ask what they're doing work-wise at the moment
 - read and make sure you've understood your service's documentation
   - see appropriate page in
     https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/655463/Services
