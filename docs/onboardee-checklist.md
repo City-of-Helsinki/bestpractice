@@ -29,7 +29,6 @@ route: /onboardee-checklist
 * The expectation is that you would be **proactive** and read and implement the steps in this checklist pragmatically.
 * We know there's plenty of things you need to setup, and therefore we won't ask you to take a dev ticket before you tell us that you're done with this checklist ✅
 * It is fine if you spend ~2 working days to complete this checklist. Or more if needed by letting your tutor know.
-* Please consider updating this checklist once you feel you're settled here to prevent this going out of date and causing new team members confusion and hassles.
 
 ### Understand City of Helsinki organization as a developer
 ![City of Helsinki organization as a developer](../static/city_of_helsinki.png)
@@ -102,6 +101,4 @@ able to get back to them later upon need.
 ### You're done, thank you!
 * At this point, you're ready to ask your team members or your tutor for a dev task of sensible difficulty.
 * Ask your team members for feedback to see if they think you're doing fine and how to take it from here onwards.
-
-- add more things that should be on this checklist
-
+* Please consider updating this checklist if you feel that now you're settled here to prevent this list going out of date and causing new team members confusion and hassles.
