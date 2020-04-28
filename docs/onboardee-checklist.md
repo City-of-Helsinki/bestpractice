@@ -103,8 +103,5 @@ able to get back to them later upon need.
 * At this point, you're ready to ask your team members or your tutor for a dev task of sensible difficulty.
 * Ask your team members for feedback to see if they think you're doing fine and how to take it from here onwards.
 
-- are you able to get a review environment for your pull request?
-  - if not, raise the issue
-- are you able to diagnose why your build failed (if it did)?
 - add more things that should be on this checklist
 
