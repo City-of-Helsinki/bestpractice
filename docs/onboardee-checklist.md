@@ -66,6 +66,7 @@ You may want to install native clients of those for your operating system or boo
     * There are a few known issues related to `Stadinetti` like IMAP not working or hanging on inital connection to Google which are being investigated.
     * Because of this, some folks hotspot their internet from their phones and connect to internet like that.
 * Learn [how to report your working hours](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/30015547/Work+hours+tracking).
+* Learn the [basics of working with Jira](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753745/Jira+instructions) if you aren't familiar with it already.
 * Integrate [KuVa's calendar](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/47677441/Calendar+usage) into your calendar workflow.
 * Based on the team you've joined in your physical developer onboarding meeting, ensure that you know exactly which team's daily and
 sprint demo/retro/planning/refinement you should join on your calendar.
@@ -102,8 +103,6 @@ able to get back to them later upon need.
 * At this point, you're ready to ask your team members or your tutor for a dev task of sensible difficulty.
 * Ask your team members for feedback to see if they think you're doing fine and how to take it from here onwards.
 
-- do you know how to update Jira tickets in each phase?
-  - https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753745/Jira+instructions
 - are you able to get a review environment for your pull request?
   - if not, raise the issue
 - are you able to diagnose why your build failed (if it did)?
