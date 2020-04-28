@@ -13,6 +13,7 @@ route: /onboardee-checklist
 * [Ensure that you have access to essential services you need as a developer](#ensure-that-you-have-access-to-essential-services-you-need-as-a-developer)
 * [Ensure that you have setup all that is required to operate within a team](#ensure-that-you-have-setup-all-that-is-required-to-operate-within-a-team)
 * [Get to know people!](#get-to-know-people)
+* [Get a general sense of how we develop software in City of Helsinki](#get-a-general-sense-of-how-we-develop-software-in-city-of-helsinki)
 
 <!-- vim-markdown-toc -->
 
@@ -74,12 +75,14 @@ sprint demo/retro/planning/refinement you should join on your calendar.
 * You can also take a look at the list of [people working here](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753891/People) and contact some/any of them
 you feel their work is interesting and ask them what they're doing work-wise for example!
 
-- read and make sure you've understood development practices:
-  - https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/65679/Development+practices
-  - at least the main page, and check that you know approximately what
-    kind of information there is so you can get back to it upon need
-  - ask for clarifications if something is unclear
-  - fix missing parts
+### Get a general sense of how we develop software in City of Helsinki
+* You don't have to understand everything at the detail level, that's more info than one can handle in a few days, especially during the first days!
+* We'd like you, however, to try to construct a high level image of software development practices that we have in City of Helsinki.
+* This means what technologies we use and why, how and where we deploy, how we git, etc.
+* The highest level document of our [development practices is here](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/65679/Development+practices).
+* You can read the main page of the document practices completely, and **sneak peak** into the linked children pages to get the high level image you'd need and be
+able to get back to them later upon need.
+
 - read and make sure you've understood your service's documentation
   - see appropriate page in
     https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/655463/Services
