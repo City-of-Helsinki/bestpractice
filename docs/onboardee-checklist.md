@@ -15,6 +15,7 @@ route: /onboardee-checklist
 * [Get to know people!](#get-to-know-people)
 * [Get a general sense of how we develop software in City of Helsinki](#get-a-general-sense-of-how-we-develop-software-in-city-of-helsinki)
 * [Get your service up and running](#get-your-service-up-and-running)
+* [You're done, thank you!](#youre-done-thank-you)
 
 <!-- vim-markdown-toc -->
 
@@ -97,15 +98,14 @@ able to get back to them later upon need.
 * Ensure that the items within "*what should README.md contain?*" section of
 [documentation practices](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753772/Documentation+practices) are already taken care of, or write them yourself if they aren't.
 
-- at this point, you can ask your tutor to get assigned a task of
-  sensible difficulty
-  - check with your tutor that they think what you're doing is how it
-    should be done
+### You're done, thank you!
+* At this point, you're ready to ask your team members or your tutor for a dev task of sensible difficulty.
+* Ask your team members for feedback to see if they think you're doing fine and how to take it from here onwards.
+
 - do you know how to update Jira tickets in each phase?
   - https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753745/Jira+instructions
 - are you able to get a review environment for your pull request?
   - if not, raise the issue
 - are you able to diagnose why your build failed (if it did)?
 - add more things that should be on this checklist
-- ask your teammates whether they think you are doing fine
 
