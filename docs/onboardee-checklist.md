@@ -11,6 +11,7 @@ route: /onboardee-checklist
 * [Get started here](#get-started-here)
 * [Understand City of Helsinki organization as a developer](#understand-city-of-helsinki-organization-as-a-developer)
 * [Ensure that you have access to essential services you need as a developer](#ensure-that-you-have-access-to-essential-services-you-need-as-a-developer)
+* [Ensure that you have setup all that is required to operate within a team](#ensure-that-you-have-setup-all-that-is-required-to-operate-within-a-team)
 
 <!-- vim-markdown-toc -->
 
@@ -53,6 +54,15 @@ the items there are relavent to you as well.
 * [Optional] City of Helsinki heavily uses Jira, Slack, and Teams for tasks management and video calls.
 You may want to install native clients of those for your operating system or bookmark them for easier access.
 
+### Ensure that you have setup all that is required to operate within a team
+* `Stadinetti` is our wi-fi of choice at the office which you may connect to if you want.
+    * There are a few known issues related to `Stadinetti` like IMAP not working or hanging on inital connection to Google which are being investigated.
+    * Because of this, some folks hotspot their internet from their phones and connect to internet like that.
+* Learn [how to report your working hours](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/30015547/Work+hours+tracking).
+* Integrate [KuVa's calendar](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/47677441/Calendar+usage) into your calendar workflow.
+* Based on the team you've joined in your physical developer onboarding meeting, ensure that you know exactly which team's daily and
+sprint demo/retro/planning/refinement you should join on your calendar.
+
 - have you got a tutor?  You should!
   - your tutor is the first one to contact about any questions
   - they also have a checklist:
@@ -63,14 +73,6 @@ You may want to install native clients of those for your operating system or boo
     kind of information there is so you can get back to it upon need
   - ask for clarifications if something is unclear
   - fix missing parts
-- ensure you have the conditions of working good
-  - test wifi is working at the office (Stadinetti)
-  - you have access or have integrated the calendar somehow
-  - you have access and know how to use Jira
-  - you know how to report hours:
-    https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/30015547/Work+hours+tracking
-  - you know which daily, planning, refinement, demo, retrospectives you
-    should go to
 - get to know people
   - write a short (say couple of lines) introduction about yourself to
     #kuva-aok
