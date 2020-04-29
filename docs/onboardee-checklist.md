@@ -75,7 +75,7 @@ sprint demo/retro/planning/refinement you should join on your calendar.
 * Your tutor is your go-to buddy and you can ask all your questions from them.
 * [[KuVa specific:]] Write a few lines to introduce yourself to everyone in `#kuva-aok` Slack channel.
 * Your team members should ideally pick you up for lunch themselves, but in the hopefully-unlikely scenario that they forget, feel free to ask and tag along with them! 👍
-* [[KuVa specific:]] If you feel like you got jokes or opinions you want to share, `#ratkis-kitchenette` is the fun 😀 slack channel and the place to be!
+* [[KuVa specific:]] Start an opinionated discussion about whatever on `#ratkis-kitchenette` as that is the fun 😀 slack channel and the place to be!
 * [[KuVa specific:]] You can also take a look at the list of [people working here](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753891/People) and contact some/any of them
 you feel their work is interesting and ask them what they're doing work-wise for example!
 
