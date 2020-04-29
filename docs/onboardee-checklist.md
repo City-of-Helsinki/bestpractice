@@ -33,7 +33,7 @@ route: /onboardee-checklist
 ### Understand City of Helsinki organization as a developer
 ![City of Helsinki organization as a developer](../static/city_of_helsinki.png)
 * City of Helsinki has plenty of separate departments, [[KuVa specific:]] from which the most important ones you'll be dealing with are **KuVa** and **Kanslia**.
-* KuVa (Kulttuuri ja Vapaa-aika) is the Culture and Leisure department and Kanslia (Kaupunginkanslia) is the City Hall department.
+* KuVa (Kulttuuri ja Vapaa-aika) is the Culture and Leisure department and Kanslia (Kaupunginkanslia) is the executive office.  All departments are listed [on this page](https://www.hel.fi/helsinki/fi/kaupunki-ja-hallinto/hallinto/organisaatio/toimialat).  Kymp = Kaupunkiympäristö, Kasko = Kasvatus ja koulutus, Sote = Sosiaali- ja terveysala
 * KuVa and Kanslia both have:
     * Their own budgets
     * Their own development goals
