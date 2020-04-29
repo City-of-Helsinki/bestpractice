@@ -34,20 +34,20 @@ route: /onboardee-checklist
 ![City of Helsinki organization as a developer](../static/city_of_helsinki.png)
 * City of Helsinki has plenty of separate departments, [[KuVa specific:]] from which the most important ones you'll be dealing with are **KuVa** and **Kanslia**.
 * KuVa (Kulttuuri ja Vapaa-aika) is the Culture and Leisure department and Kanslia (Kaupunginkanslia) is the executive office.  All departments are listed [on this page](https://www.hel.fi/helsinki/fi/kaupunki-ja-hallinto/hallinto/organisaatio/toimialat).  Kymp = Kaupunkiympäristö, Kasko = Kasvatus ja koulutus, Sote = Sosiaali- ja terveysala
-* KuVa and Kanslia both have:
+* The different departments have:
     * Their own budgets
     * Their own development goals
     * Their own office space
     * Their own developers
     * Their own infrastructure they deploy their services to
-* There's plenty of collaboration between KuVa and Kanslia as some of the services developed by Kanslia and deployed in Kanlisa are heavily used by some KuVa services, for example.
+* Some of the services developed by Kanslia are heavily used by some KuVa services, and some Kuva services are deployed by Kanslia.
 * Your onboader on the first day should tell you whether you're working in KuVa or Kanslia, if location of office or other things haven't given it away already 😀
 
 ### Ensure that you have access to essential services you need as a developer
 * Choose an email address of your own that you'd like to use for working in City of Helsinki.
-    * Unless you're working for City of Helsinki itself, as a developer, you won't get hel.fi email accounts, but this is being reconsiderred.
+    * Unless you're working for City of Helsinki itself, as a developer, you won't get hel.fi email accounts, but this might change in the future.
 * Choose your Github and Gitlab username that you'd like to use for working in City of Helsinki.
-* Give your email and Github and Gitlab usernames to your **onbaorder** so they can give you access to:
+* Give your email and Github and Gitlab usernames to your onboarder so they can give you access to:
     * [City of Helsinki Slack](https://helsinkicity.slack.com/)
     * [Helsinki's Atlassian for Jira, Confluence, etc](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/overview)
     * [[KuVa specific:]] [KuVa's Gitlab](https://gitlab.com/City-of-Helsinki/KuVa)
