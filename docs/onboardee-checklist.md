@@ -32,7 +32,7 @@ route: /onboardee-checklist
 
 ### Understand City of Helsinki organization as a developer
 ![City of Helsinki organization as a developer](../static/city_of_helsinki.png)
-* City of Helsinki has plenty of **separate** departments, from which the most important ones you'll be dealing with are **KuVa** and **Kanslia**.
+* City of Helsinki has plenty of separate departments, [[KuVa specific:]] from which the most important ones you'll be dealing with are **KuVa** and **Kanslia**.
 * KuVa (Kulttuuri ja Vapaa-aika) is the Culture and Leisure department and Kanslia (Kaupunginkanslia) is the City Hall department.
 * KuVa and Kanslia both have:
     * Their own budgets
@@ -49,9 +49,9 @@ route: /onboardee-checklist
 * Choose your Github and Gitlab username that you'd like to use for working in City of Helsinki.
 * Give your email and Github and Gitlab usernames to your **onbaorder** so they can give you access to:
     * [City of Helsinki Slack](https://helsinkicity.slack.com/)
-    * [KuVa's Atlassian for Jira, Confluence, etc](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/overview)
-    * [KuVa's Gitlab](https://gitlab.com/City-of-Helsinki/KuVa)
-    * [KuVa's Github](https://github.com/orgs/City-of-Helsinki/teams/kuva-developers/members)
+    * [Helsinki's Atlassian for Jira, Confluence, etc](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/overview)
+    * [[KuVa specific:]] [KuVa's Gitlab](https://gitlab.com/City-of-Helsinki/KuVa)
+    * [[KuVa specific:]] [KuVa's Github team](https://github.com/orgs/City-of-Helsinki/teams/kuva-developers/members)
 * Skim through [this page in Jira](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/851980/Services+and+accounts+for+new+developers) and see if any of
 the items there are relavent to you as well.
 
@@ -61,22 +61,22 @@ the items there are relavent to you as well.
 You may want to install native clients of those for your operating system or bookmark them for easier access.
 
 ### Ensure that you have setup all that is required to operate within a team
-* `Stadinetti` is our wi-fi of choice at the office which you may connect to if you want.
+* [[AOK (KuVa, Kanslia) specific:]] `Stadinetti` is our wi-fi of choice at the office which you may connect to if you want.
     * There are a few known issues related to `Stadinetti` like IMAP not working or hanging on inital connection to Google which are being investigated.
     * Because of this, some folks hotspot their internet from their phones and connect to internet like that.
 * Learn [how to report your working hours](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/30015547/Work+hours+tracking).
 * Learn the [basics of working with Jira](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753745/Jira+instructions) if you aren't familiar with it already.
-* Integrate [KuVa's calendar](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/47677441/Calendar+usage) into your calendar workflow.
+* [[KuVa specific:]] Integrate [KuVa's calendar](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/47677441/Calendar+usage) into your calendar workflow.
 * Based on the team you've joined in your physical developer onboarding meeting, ensure that you know exactly which team's daily and
 sprint demo/retro/planning/refinement you should join on your calendar.
 
 ### Get to know people!
 * You should have been assigned a tutor by your onboarder in the physical developer onboarding meeting.
 * Your tutor is your go-to buddy and you can ask all your questions from them.
-* Write a few lines to introduce yourself to everyone in `#kuva-aok` Slack channel.
+* [[KuVa specific:]] Write a few lines to introduce yourself to everyone in `#kuva-aok` Slack channel.
 * Your team members should ideally pick you up for lunch themselves, but in the hopefully-unlikely scenario that they forget, feel free to ask and tag along with them! 👍
-* If you feel like you got jokes or opinions you want to share, `#ratkis-kitchenette` is the fun 😀 slack channel and the place to be!
-* You can also take a look at the list of [people working here](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753891/People) and contact some/any of them
+* [[KuVa specific:]] If you feel like you got jokes or opinions you want to share, `#ratkis-kitchenette` is the fun 😀 slack channel and the place to be!
+* [[KuVa specific:]] You can also take a look at the list of [people working here](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/pages/753891/People) and contact some/any of them
 you feel their work is interesting and ask them what they're doing work-wise for example!
 
 ### Get a general sense of how we develop software in City of Helsinki
