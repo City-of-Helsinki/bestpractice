@@ -1,5 +1,5 @@
 ---
-name: ' DevOps practices'
+name: DevOps practices
 menu: Best practices
 route: /devops
 ---
