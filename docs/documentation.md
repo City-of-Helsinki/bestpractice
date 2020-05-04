@@ -42,3 +42,80 @@ If you make a pull request, you may also want to contact
 Our contribution handling guidelines are at
 https://github.com/City-of-Helsinki/bestpractice/blob/master/accepting-contributions.md
 ```
+
+Also see the contributing.md of [this developer site](https://github.com/City-of-Helsinki/bestpractice/blob/master/.github/contributing.md).
+
+## GitHub templates
+Templates for [pull requests](https://github.com/City-of-Helsinki/bestpractice/blob/master/.github/pull_request_template.md), [bug reports](https://github.com/City-of-Helsinki/bestpractice/blob/master/.github/ISSUE_TEMPLATE/bug_report.md) and [feature requests](https://github.com/City-of-Helsinki/bestpractice/blob/master/.github/ISSUE_TEMPLATE/feature_request.md) can be found [in the repository](https://github.com/City-of-Helsinki/bestpractice/tree/master/.github). Modify these to suit the project if needed. Read more about templates on [GitHub](https://help.github.com/en/github/building-a-strong-community/about-issue-and-pull-request-templates).
+
+### Pull request template
+
+```
+## Description
+
+## Issues
+### Closes
+**[DEV-XXX](https://helsinkisolutionoffice.atlassian.net/browse/DEV-XXX):** 
+
+### Related
+
+## Testin
+### Automated tests
+
+### Manual testing
+
+## Screenshots
+
+## Additional notes
+
+```
+
+### Bug report
+```
+**Describe the bug**
+A clear and concise description of what the bug is.
+
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
+
+**Expected behavior**
+A clear and concise description of what you expected to happen.
+
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
+
+**Desktop (please complete the following information):**
+ - OS: [e.g. iOS]
+ - Browser [e.g. chrome, safari]
+ - Version [e.g. 22]
+
+**Smartphone (please complete the following information):**
+ - Device: [e.g. iPhone6]
+ - OS: [e.g. iOS8.1]
+ - Browser [e.g. stock browser, safari]
+ - Version [e.g. 22]
+
+**Additional context**
+Add any other context about the problem here.
+
+```
+
+### Feature request
+```
+**Is your feature request related to a problem? Please describe.**
+A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+
+**Describe the solution you'd like**
+A clear and concise description of what you want to happen.
+
+**Describe alternatives you've considered**
+A clear and concise description of any alternative solutions or features you've considered.
+
+**Additional context**
+Add any other context or screenshots about the feature request here.
+
+```
