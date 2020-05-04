@@ -19,7 +19,7 @@ The [EU directive on web accessibility](https://eur-lex.europa.eu/eli/dir/2016/2
 have to comply with a similar level of accessibility by the time of production release (older websites by September 23 2020).
 
 As a developer, it is your responsibility to write code that results in web services that comply with these accessibility standards. 
-Accessibility is something that needs to thought of from the get-go in each development project, not just tested for at the moment 
+Accessibility is something that needs to be thought of from the get-go in each development project, not just tested for at the moment 
 of v1.0 release. Fortunately React, our chosen framework for UIs, [fully supports accessibility](https://reactjs.org/docs/accessibility.html).
 
 ## Accessibility in short
@@ -34,8 +34,7 @@ Everyone 😊 But more specifically, some of the most common conditions affectin
 * Blindness or visual impairment, including a partial or total inability to see or to perceive color contrasts.
 * Deafness or hearing impairment. For example audio and video content may be impossible to use.
 * Diminished motor skills and physical disabilities. For example using a mouse might be difficult if not impossible due to the precise movements required.
-* Photosensitive seizures: Conditions such as epilepsy can cause seizures that are often triggered by flashing lights.
-* Cognitive disabilities: many conditions affect cognitive ability, such as dementia and dyslexia, requiring easily understandable content.
+* Cognitive disabilities. Many conditions affect cognitive ability, such as dementia and dyslexia, requiring easily understandable content.
 
 ### How is accessible content consumed?
 Users affected by these conditions use [assistive technology and adaptive strategies](https://www.w3.org/WAI/people-use-web/tools-techniques/) to browse our services. These include screen readers, screen magnifiers, speech recognition software, voice recognition, Braille terminals, eye-tracking systems, alternative keyboards and keyboard navigation.
@@ -54,11 +53,11 @@ Users affected by these conditions use [assistive technology and adaptive strate
 
 ## Testing and analyzing accessibility
 ### Static code analysis
-Use the [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) accessibility linting library that identifies and enforces a number of accessibility rules. Create-react-app [comes bundled with](https://github.com/facebook/create-react-app/blob/master/packages/eslint-config-react-app/README.md#accessibility-checks) the said library.
+Use the [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) accessibility linting library that identifies and enforces a number of accessibility rules. Create-react-app [comes bundled with](https://github.com/facebook/create-react-app/blob/master/packages/eslint-config-react-app/README.md#accessibility-checks) this library with a subset of rules activated.
 
 ### Automated testing
 * Run Google Lighthouse / Chrome DevTools [Accessibility audit](https://developers.google.com/web/tools/chrome-devtools/accessibility/reference). Consider checking [how the accessibility score is calculated](https://developers.google.com/web/tools/lighthouse/v3/scoring#a11y) to understand which things are most important to get right.
-* Include the [axe](https://github.com/dequelabs/axe-core) accessibility testing engine in your development process. For React development, use the [react-axe](https://github.com/dequelabs/react-axe) library.
+* Include the [axe](https://github.com/dequelabs/axe-core) accessibility testing engine in your development process. For React development, use the [react-axe](https://github.com/dequelabs/react-axe) library. There is also an [axe CLI](https://github.com/dequelabs/axe-cli) and a [Chrome extension](https://chrome.google.com/webstore/detail/axe-web-accessibility-tes/lhdoppojpmngadmnindnejefpokejbdd).
 
 ### Manual testing
 * Unplug your mouse and navigate the service with a keyboard only
