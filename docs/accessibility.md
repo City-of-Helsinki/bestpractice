@@ -1,10 +1,10 @@
 ---
-name: Accessibility
+name: Web accessibility
 route: /accessibility
 menu: Best practices
 ---
 
-# Accessibility
+# Web accessibility
 
 ---
 
@@ -37,7 +37,7 @@ Everyone 😊 But more specifically, some of the most common conditions affectin
 * Cognitive disabilities. Many conditions affect cognitive ability, such as dementia and dyslexia, requiring easily understandable content.
 
 ### How is accessible content consumed?
-Users affected by these conditions use [assistive technology and adaptive strategies](https://www.w3.org/WAI/people-use-web/tools-techniques/) to browse our services. These include screen readers, screen magnifiers, speech recognition software, voice recognition, Braille terminals, eye-tracking systems, alternative keyboards and keyboard navigation.
+Users affected by these conditions use [assistive technology and adaptive strategies](https://www.w3.org/WAI/people-use-web/tools-techniques/) to browse our services. These include screen readers, screen magnifiers, voice recognition software, Braille terminals, eye-tracking systems, alternative keyboards and keyboard navigation.
 
 ## How to develop accessible services
 * Write standards compliant, semantic HTML and CSS
@@ -50,6 +50,30 @@ Users affected by these conditions use [assistive technology and adaptive strate
 * [A11Y checklist](https://a11yproject.com/checklist/)
 * [WCAG checklist from Wuhcag](https://www.wuhcag.com/wcag-checklist/)
 * [WCAG checklist from WebAIM](https://webaim.org/standards/wcag/checklist)
+
+### Common mistakes and how to avoid them
+Accessibility issues discovered in previous [audits](#accessibility-audit) are listed here. Taking these into account in the development phase before the audit will obviously result in less rework, faster delivery and happiness all-around. 😍
+
+- Focus control: relevant interactive elements cannot be used with a keyboard because the user cannot focus selection on these elements and activate them. The focus outline should also be visible i.e. an outline around the currently selected element.
+- Open source components are not keyboard navigable: Components such as maps or calendar widgets might not be fully navigable with a keyboard. Check if this is the case before selecting which components to implement. Note that legislation specifically excludes maps from accessibility regulations but the site should still be usable without the map. You should also indicate to the user if there is a map on the site and that the site is usable without the map. All other components should be accessible.
+- Confusing logical order of navigation with a keyboard, especially with sites that are responsive: Navigating the site with a keyboard should be simple and the order of navigating should not change when display size is altered (responsiveness). Be especially careful when things fold into a hamburger menu or other changes happen with smaller screen sizes.
+- Overuse and repetition of `aria-label` attributes and `label` elements: The `aria-label` attribute is used to define a string that labels the current element. Use it in cases where a text label is not visible on the screen. The use of aria-labels should be concise and well-thought-out in order to not confuse or frustrate users of screen reading devices.
+- Labels are read in several languages: screen readers should be directed to only read the label in the language that the user currently has selected.
+- No anchor link to jump to main content: This is useful for keyboard navigation to quickly navigate to main content. It can be hidden from the visual interface to only be available for keyboard users.
+- Forms are not accessible: form error messages should indicate which field they relate by including the field name and error name into `aria-labelledby` and by setting `aria-invalid="true"`. Forms should also support autocompletion.
+- Screen readers get stuck or stop working in various places: test by using a screen reader app to ensure smooth navigation
+- Use of FI and SV shorthands for language selector names. Use the full language name either in the visible menu or as an aria-label attribute
+- Implementing tabs as buttons instead of using `role="tab"` and `aria-selected="true/false"` or `tabpanel` attribute
+- Using VoiceOver and keyboard navigation simultaneously results in conflicts: Do not test with only one or the other, test if using both at the same time works as well.
+- Date picker element only supports mouse clicking and not keyboard input
+- Textual description of buttons, icons or links are not understandable in the context: Think thoroughly whether you would understand what the button/icon/link does in a certain context. Create a descriptive, context sensitive aria-label.
+- Confusing search results: the amount of search results is not indicated to the user. Successfully ordering search results does not result in success message. Use `role="status"` for these.
+- User path and phases are not understandable: describe the user path in a multi-stage process such as booking or payment with `aria-labels`
+- Empty links: remove empty links so the user won’t get confused
+- Help or info texts are behind an icon and not accessible: all help texts should be accessible by keyboard
+- Language selection with a keyboard and screen reader: the language dropdown menu is labelled after the current active language: label it as  `choose language` instead. The `lang` attribute is misconfigured resulting in screen readers to mispronounce it. 
+- Information about the dropdown being open/closed does not reach the user: use `aria-haspopup="true"` and `aria-expanded="true/false"`.
+- Use of `role="menu"` in language selector or log out dropdown instead of `aria-haspopup="true”` and `aria-expanded` attributes. `role="menu"` should be used only when a list of menu items is presented in a manner similar to a menu on a desktop application.
 
 ## Testing and analyzing accessibility
 ### Static code analysis
@@ -69,29 +93,10 @@ Use the [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a1
 ### Accessibility audit
 An accessibility audit should be performed by an accessibility expert near the production release of the service. These can be ordered through the Service Center (Palvelukeskus Helsinki / Palke) by the product owner. The audit combines manual testing with automated testing and results in a report with detailed information about issues to be fixed and instructions on how to fix them. Conducting the audit requires a code freeze for a week or so. If the audit results in a large number of fixes, conducting a follow-up audit after attempting the fixes may be in order.
 
-#### Common findings in previous audits
-Some of the more common accessibility issues are listed here. Taking these into account in the development phase before the audit will obviously result in less rework, faster delivery and happiness all-around. 😍
+## Accessibility of admin UIs and APIs
+The legislation applies to consumer-facing digital services and these should be the primary focus of accessibility efforts. However, if possible, internal admin user interfaces should be made accessible as well since Helsinki employees using the interface may have disabilities. Keep this in mind when building React admin UIs.
 
-- Open source components are not keyboard navigable: Components such as maps or calendar widgets might not be fully navigable with a keyboard. Check if this is the case before selecting which components to implement. Note that legislation specifically excludes maps from accessibility regulations but the site should still be usable without the map. You should also indicate to the user if there is a map on the site and that the site is usable without the map. All other components should be accessible.
-- Overuse and repetition of `aria-label` attributes and `label` elements: The `aria-label` attribute is used to define a string that labels the current element. Use it in cases where a text label is not visible on the screen. The use of aria-labels should be concise and well-thought-out in order to not confuse or frustrate users of screen reading devices.
-- Labels are read in several languages: screen readers should be directed to only read the label in the language that the user currently has selected.
-- Confusing logical order of navigation with a keyboard, especially with sites that are responsive: Navigating the site with a keyboard should be simple and the order of navigating should not change when display size is altered (responsiveness). Be especially careful when things fold into a hamburger menu or other changes happen with smaller screen sizes.
-- No anchor link to jump to main content: This is useful for keyboard navigation to quickly navigate to main content. It can be hidden from the visual interface to only be available for keyboard users.
-- Forms are not accessible: form error messages should indicate which field they relate by including the field name and error name into `aria-labelledby` and by setting `aria-invalid=true`. Forms should also support autocompletion.
-- Screen readers get stuck or stop working in various places: test by using a screen reader app to ensure smooth navigation
-- Use of `role-menu` in language selector or log out dropdown instead of `aria-haspopup="true”` and `aria-expanded` attributes
-- Use of FI and SV shorthands for language selector names. Use the full language name either in the visible menu or as an aria-label attribute
-- Implementing tabs as buttons instead of using `role=tab` and `aria-selected=true/false` or `tabpanel` attribute
-- Using VoiceOver and keyboard navigation simultaneously results in conflicts: Do not test with only one or the other, test if using both at the same time works as well.
-- Date picker element only supports mouse clicking and not keyboard input
-- Textual description of buttons, icons or links are not understandable in the context: Think thoroughly whether you would understand what the button/icon/link does in a certain context. Create a descriptive, context sensitive aria-label.
-- Confusing search results: the amount of search results is not indicated to the user. Successfully ordering search results does not result in success message. Use `role=status` for these.
-- user path and phases are not understandable: describe the user path in a multi-stage process such as booking or payment with `aria-labels`
-- empty links: remove empty links so the user won’t get confused
-- help or info texts are behind an icon and not accessible: all help texts should be accessible by keyboard
-
-#### Audit reports
-These accessibility audit reports are unfortunately in Finnish. However you might understand the general gist of the issues by observing the english attribute names and the associated pictures. Browsing through these will give you an idea of what kind of issues you should focus on before ordering the audit.
+The legislation does not apply to APIs. There is no policy on whether Helsinki APIs should be accessible or not.
 
 ## Noteworthy examples of accessible services
 - [Service Map](https://palvelukartta.hel.fi/en/). The new version is completely redesigned with an accessibility-first attitude with input from accessibility experts and includes excellent user-configurable accessibility settings. The map component is not accessible but the site is fully usable without it.
@@ -99,11 +104,6 @@ These accessibility audit reports are unfortunately in Finnish. However you migh
 ## Banned non-accessible libraries, packages and components
 These open source building blocks have been used at some point in some services and later found to be non-accessible. Do not use these!
 - [FullCalendar](https://fullcalendar.io/)
-
-## Accessibility of admin UIs and APIs
-The legislation applies to consumer-facing digital services and these should be the primary focus of accessibility efforts. However, if possible, internal admin user interfaces should be made accessible as well since Helsinki employees using the interface may have disabilities. Keep this in mind when building React admin UIs.
-
-The legislation does not apply to APIs. There is no policy on whether Helsinki APIs should be accessible or not.
 
 ## Resources
 * [City of Helsinki content accessibility guidelines for the web](https://www.hel.fi/static/hki4all/ohjeet/saavutettavuus-opas.pdf) 
