@@ -106,8 +106,7 @@ These open source building blocks have been used at some point in some services 
 - [FullCalendar](https://fullcalendar.io/)
 
 ## Resources
-* [City of Helsinki content accessibility guidelines for the web](https://www.hel.fi/static/hki4all/ohjeet/saavutettavuus-opas.pdf) 
-(only in Finnish for now)
+* [City of Helsinki content accessibility guidelines for the web](https://www.hel.fi/static/liitteet/kanslia/TPR/opas_saavutettavaan_sisaltoon_EN.pdf)
 * [Helsinki Design System section on accessibility](https://city-of-helsinki.github.io/helsinki-design-system/guidelines/accessibility)
 * [The A11Y Project](https://a11yproject.com/)
 * [W3C Web Accessibility Initiative](https://www.w3.org/WAI/)  
