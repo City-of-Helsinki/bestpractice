@@ -11,6 +11,8 @@ In general, new projects tend to couple to some City of Helsinki APIs, most impo
 to several projects. You are encouraged to use these in your own project and contribute to them to suit
 your own needs and help others using the same libraries.
 
+For more general technology and library choices, please read [technology choices](/technology-choices).
+
 ## Authentication
 
 The [django-helusers](https://github.com/City-of-Helsinki/django-helusers) app will integrate Django user
