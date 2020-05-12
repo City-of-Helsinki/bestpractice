@@ -27,7 +27,8 @@ addresses in the Helsinki region, and various other districts and boundaries use
 city bureaucracy.
 
 Most of the datasets used by django-munigeo are found in the [Helsinki Region Infoshare](https://www.hri.fi)
-open data portal, which has many more datasets available. If the dataset you need does not have an importer
+open data portal, which has many more datasets available. For more detailed information on our available
+geospatial and map data, please read [map layers](/maps). If the dataset you need does not have an importer
 in django-munigeo yet, please implement the import and create a PR in django-munigeo!
 
 ## City organization
