@@ -12,6 +12,8 @@ to several projects. You are encouraged to use these in your own project and con
 your own needs and help others using the same libraries.
 
 For more general technology and library choices, please read [technology choices](/technology-choices).
+A repository for [smaller Python utils](https://github.com/City-of-Helsinki/helsinki-utils-python)
+is also available.
 
 ## Authentication
 
