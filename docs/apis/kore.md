@@ -9,4 +9,4 @@ route: /apis/kore
 
 Kore API contains the complete Helsinki school history database operated by the City Archives. It is used by [koulurekisteri.hel.fi](https://koulurekisteri.hel.fi).
 
-API location: [https://api.hel.fi/kore/v1](https://api.hel.fi/kore/v1)
+* API location: [api.hel.fi/kore/v1](https://api.hel.fi/kore/v1)
