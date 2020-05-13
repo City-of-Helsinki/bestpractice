@@ -7,7 +7,7 @@ route: /django-libraries
 # Common Django libraries and components at the City of Helsinki
 
 In general, new projects tend to couple to some City of Helsinki APIs, most importantly *authentication*,
-*geospatial data* and *city organization*. For these purposes, we have existing Django libraries common
+*geospatial data*, *city organization* and *notification*. For these purposes, we have existing Django libraries common
 to several projects. You are encouraged to use these in your own project and contribute to them to suit
 your own needs and help others using the same libraries.
 
@@ -46,3 +46,10 @@ Also provided is an importer to import the existing hierarchy into your Django a
 is expected to have lots of users around the city hierarchy on many different levels, this will help your
 product owner to allocate each user to the correct location in the city organization. An example of how
 the hierarchy is used in user permission management is e.g. [Linkedevents](https://github.com/City-of-Helsinki/linkedevents).
+
+## Notification
+
+The [django-ilmoitin](https://github.com/City-of-Helsinki/django-ilmoitin) app allows you to couple your
+Django models save methods and/or signals to Helsinki Mailgun account for sending email notifications,
+modeled after templates editable in django-admin, to Django users after certain events, either instantly
+or via a message queue.
