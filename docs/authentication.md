@@ -6,15 +6,40 @@ including Espoo, Vantaa and Helsinki internal accounts, Facebook, Google and Git
 Tunnistamo also keeps a running session for the user, meaning the user won't be needing
 to login again to access another service using tunnistamo.
 
-The actual line protocols are OAuth2 and OIDC.
+The actual line protocols are OAuth2 and OIDC. New applications should always use OIDC.
+
+## Getting necessary Tunnistamo identifiers
+
+To get started you will either need a locally setup instance of Tunnistamo or get access to one of shared instances available within Helsinki infrastructure. I'd recommend that you try and get access to the shared instances, unless you must develop offline. 
+
+Current instances are:
+* Kanslia (executive office) instance: default instance used by projects, both during development and production
+* KuVa (culture and leisure) instance: instance used by KuVa projects during their development. Very flexible registration
+
+To get access to Kanslia instance, pop by the slack channel #tunnistamo
+For KuVa instance the onboarding process has already told you the right channels.
+
+As a concrete result you will have four pieces of data:
+* the URL for your tunnistamo instance (like https://api.hel.fi/sso/, the executive office instance)
+* your client ID
+* your client secret (this does not exist in all cases)
+* your agreed callback URL. This depends entirely on your authentication library
+
+Callback URL is the address within your application for finalizing the authentication. You will have at least two callbacks:
+* one within "localhost", for using on your own personal computer
+* one or more, that refer to public instances of your application
+
+Armed with those you can begin attaching authentication to your application.
 
 ## Handling authentication (user login)
 
 Actual usage is abstracted behind libraries:
 
-Django based backends:  
+Django based backends: [django-helusers](https://github.com/City-of-Helsinki/django-helusers)
 
 JS based frontends: no specific library at the moment, would be beneficial
+
+For django-helusers, the README should get you up and running. For JS frontends you will currently have to ask around, Google and look into other JS projects within github.com/City-of-Helsinki
 
 ## Logout
 
