@@ -9,10 +9,11 @@ route: /apis/statistics
 
 Query the city's statistical databases
 
-API location: [http://dev.hel.fi/stats/resources/](http://dev.hel.fi/stats/resources/)
+* API location: [dev.hel.fi/stats/resources/](http://dev.hel.fi/stats/resources/](http://dev.hel.fi/stats/resources/](http://dev.hel.fi/stats/resources/)
 
-Code and visualization examples can be found here.
-API description (subject to change):
+## Documentation
+
+The [API documentation](http://dev.hel.fi/stats/) is primarily in Finnish. English descriptions are found below.
 
 More detailed information and installation instructions can be found in the Github page of statcubeserver, which is a thin wrapper around the datafile-handler pydatacube.
 
@@ -75,5 +76,3 @@ Get data as JSON-stat:
 ```
     /resources/[dataset path]/jsonsta
 ```
-
-[Follow this link for API](http://dev.hel.fi/stats/)
