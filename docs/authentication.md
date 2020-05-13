@@ -8,6 +8,8 @@ to login again to access another service using tunnistamo.
 
 The actual line protocols are OAuth2 and OIDC. New applications should always use OIDC.
 
+*Nomenclature alert*: Tunnistamo will soon be changing names, as the implementation will switch from your own implementation (named "tunnistamo") to Keycloak based implementation. Keeping the same name would be too confusing. We're not sure of the upcoming name yet.
+
 ## Getting necessary Tunnistamo identifiers
 
 To get started you will either need a locally setup instance of Tunnistamo or get access to one of shared instances available within Helsinki infrastructure. I'd recommend that you try and get access to the shared instances, unless you must develop offline. 
