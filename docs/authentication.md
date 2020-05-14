@@ -18,7 +18,7 @@ Current instances are:
 * Kanslia (executive office) instance: default instance used by projects, both during development and production
 * KuVa (culture and leisure) instance: instance used by KuVa projects during their development. Very flexible registration
 
-To get access to Kanslia instance, pop by the slack channel #tunnistamo
+To get access to Kanslia instance, pop by the slack channel #tunnistamo.
 For KuVa instance the onboarding process has already told you the right channels.
 
 As a concrete result you will have four pieces of data:
