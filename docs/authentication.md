@@ -1,7 +1,7 @@
 # Authentication
 
 Most of the projects requiring any sort of user authentication should use Tunnistamo.
-Tunnistamo is service that authenticates users against several different identity sources,
+Tunnistamo is a service that authenticates users against several different identity sources,
 including Espoo, Vantaa and Helsinki internal accounts, Facebook, Google and Github.
 Tunnistamo also keeps a running session for the user, meaning the user won't be needing
 to login again to access another service using tunnistamo.
