@@ -1,3 +1,9 @@
+---
+name: Authentication
+menu: Best practices
+route: /authentication
+---
+
 # Authentication
 
 Most of the projects requiring any sort of user authentication should use Tunnistamo.
