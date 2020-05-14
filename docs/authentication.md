@@ -12,7 +12,7 @@ The actual line protocols are OAuth2 and OIDC. New applications should always us
 
 ## Getting necessary Tunnistamo identifiers
 
-To get started you will either need a locally setup instance of Tunnistamo or get access to one of shared instances available within Helsinki infrastructure. I'd recommend that you try and get access to the shared instances, unless you must develop offline. 
+To get started you will either need a locally setup instance of Tunnistamo or get access to one of shared instances available within Helsinki infrastructure. It is recommended that you try and get access to the shared instances, unless you must develop offline. 
 
 Current instances are:
 * Kanslia (executive office) instance: default instance used by projects, both during development and production
