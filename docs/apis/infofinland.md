@@ -9,7 +9,7 @@ route: /apis/infofinland
 
 The infoFinland API provides an interface to the content of infopankki.fi website
 
-* API location: [api.infofinland.fi](https://api.infofinland.fi/](https://api.infofinland.fi](https://api.infofinland.fi/)
+* API location: [api.infofinland.fi](https://api.infofinland.fi/)
 
 ## Information
 * [infoFinland website](http://infopankki.fi/)
