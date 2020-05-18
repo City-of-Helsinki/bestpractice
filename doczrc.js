@@ -21,6 +21,7 @@ export default {
   typescript: true,
   files: "docs/**/*.{md,markdown,mdx}",
   title: "Helsinki Developers",
+  ignore: ["docs/drafts/*",],
   themeConfig,
   menu
 };
