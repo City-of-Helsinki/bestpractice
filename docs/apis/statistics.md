@@ -9,7 +9,7 @@ route: /apis/statistics
 
 Query the city's statistical databases
 
-* API location: [dev.hel.fi/stats/resources/](http://dev.hel.fi/stats/resources/](http://dev.hel.fi/stats/resources/](http://dev.hel.fi/stats/resources/)
+* API location: [dev.hel.fi/stats/resources/](http://dev.hel.fi/stats/resources/)
 
 ## Documentation
 
