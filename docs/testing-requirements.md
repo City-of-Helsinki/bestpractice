@@ -10,7 +10,7 @@ route: /testing-requirements
 have?
 
 > well-tested program -
-> adapting to all change -
+> adapting to every change -
 > no surprises here!
 -- Panu Kalliokoski, programming haikus
 
