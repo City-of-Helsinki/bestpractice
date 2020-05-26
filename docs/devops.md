@@ -61,7 +61,7 @@ Document your environment variables in `docker-compose.env.yaml`.
 
 The entrypoint that is defined in the Dockerfile gets run when the image is started unless manually overridden by another entrypoint (`docker run --entrypoint=<entrypoint>`).
 
-By default -- when given no arguments -- the entrypoint should bring up a production server (typically [uwsgi](http://projects.unbit.it/uwsgi) in Django's case) but in many projects some sort of hot-reloading server is used for development purposes and sometimes it's useful to able to run an altogether different command as well.
+By default -- when given no arguments -- the entrypoint should bring up a production server (typically [uwsgi](http://projects.unbit.it/uwsgi) in Django's case and express in nodeJS' case) but in many projects some sort of hot-reloading server is used for development purposes and sometimes it's useful to able to run an altogether different command as well.  Support this kind of overrides.
 
 An example of an entrypoint script that handles all these cases and does some extra setting-up when requested (very useful for local development):
 
