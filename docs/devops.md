@@ -19,32 +19,21 @@ From Docker's [_Best practices for writing Dockerfiles_](https://docs.docker.com
 ### TL;DR
 
 *   Use the provided [base images](https://hub.docker.com/u/helsinkitest).
-
 *   Keep the image slim.
-
 *   One service per image.
-
 *   Use multi-stage builds, last stage should be the production build.
-
 *   Containers are run as root by default which is not nice. Drop root with `USER appuser`.
-
 *   Set owner when copying files: `COPY --chown=appuser:appuser`.
-
 *   Define an entrypoint.
-
 
 ### Base image
 
 We have production-ready base images for node, python, and node+python available at [Docker Hub](https://hub.docker.com/u/helsinkitest). These images are based on debian and have
 
 *   a non-root user (`appuser`) for running the application,
-
 *   a directory for application code (`/app`),
-
 *   helpers for installing system packages (`apt-install.sh`, `apt-cleanup.sh`),
-
 *   bash as the shell, and
-
 *   `curl`, `git`, and `wait-for-it.sh` [🔗](https://github.com/vishnubob/wait-for-it).
 
 ### Entrypoint
@@ -139,7 +128,6 @@ COPY . /app/
 RUN python manage.py collectstatic --noinput \
     && python manage.py compilescss
 
-
 # Build a base image for development and production stages.
 # Note that this stage won't get thrown out so we need to think about
 # layer sizes from this point on.
@@ -176,7 +164,6 @@ ENTRYPOINT ["./docker-entrypoint.sh"]
 ENV STATIC_ROOT /var/tunnistamo/static
 COPY --from=staticbuilder --chown=appuser:appuser /app/static /var/tunnistamo/static
 
-
 # Build development image using the previous stage as base. This is used
 # for local development with docker-compose.
 FROM appbase as development
@@ -199,7 +186,6 @@ USER appuser
 # is actually a no-op but it works as an extra bit of documentation.
 EXPOSE 8000/tcp
 
-
 # Build production image using the appbase stage as base. This should always
 # be the last stage of Dockerfile.
 FROM appbase as production
@@ -213,7 +199,9 @@ EXPOSE 8000/tcp
 ```
 
 ### Example of a Dockerfile for Node.JS
+
 Use the [Dockerfile](https://github.com/City-of-Helsinki/berth-federation-gateway/blob/develop/Dockerfile) for the Berth Federation Gateway NodeJS app for reference.
+
 Key points:
 
 1.  Since we have Kubernetes handling app lifecycle monitoring, we can afford not to use NodeJS process managers like pm2 and just run the app with the ~ `node dist/index.js` command.
