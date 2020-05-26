@@ -31,9 +31,7 @@ From Docker's [_Best practices for writing Dockerfiles_](https://docs.docker.com
 
 #### Database
 
-Running the docker image should create the database schema (= apply
-migrations) in the place specified by `DATABASE_URL` or similar
-environment variables if `APPLY_MIGRATIONS` is set.
+Running the docker image should create the database schema (= apply migrations) in the place specified by `DATABASE_URL` or the following environment variables: `DATABASE_HOST`, `DATABASE_PORT`, `DATABASE_USER` and `DATABASE_PASSWORD`.
 
 #### Creating the superuser
 
