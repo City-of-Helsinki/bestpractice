@@ -21,10 +21,25 @@ From Docker's [_Best practices for writing Dockerfiles_](https://docs.docker.com
 *   Use the provided [base images](https://hub.docker.com/u/helsinkitest).
 *   Keep the image slim.
 *   One service per image.
+*   Running the image should do everything that is necessary to bring up a working service.
 *   Use multi-stage builds, last stage should be the production build.
 *   Containers are run as root by default which is not nice. Drop root with `USER appuser`.
 *   Set owner when copying files: `COPY --chown=appuser:appuser`.
 *   Define an entrypoint.
+
+### Initialisation actions
+
+#### Database
+
+Running the docker image should create the database schema (= apply
+migrations) in the place specified by `DATABASE_URL` or similar
+environment variables if `APPLY_MIGRATIONS` is set.
+
+#### Creating the superuser
+
+The docker image should create an admin user for a Django service if one does not exist already. It should take the admin user password from the `ADMIN_USER_PASSWORD` environment variable, or if it does not exist, create a random admin password.
+
+Admin passwords should be in accordance to City of Helsinki policy.
 
 ### Base image
 
