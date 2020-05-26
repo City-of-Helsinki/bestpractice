@@ -49,6 +49,14 @@ We have production-ready base images for node, python, and node+python available
 *   bash as the shell, and
 *   `curl`, `git`, and `wait-for-it.sh` [🔗](https://github.com/vishnubob/wait-for-it).
 
+### Environment variables
+
+By default -- when given no arguments -- your image should bring up a production server.
+
+Dependent services (database, integrations, buckets etc.) should be passed to the service in environment variables.  Do _not_ pass these configuration values in when building the image - that is, don't build environment specific images.  Instead, make a single image that can be used for all environments and customise it at runtime with environment variables.  Rationale: the image is better tested, easier to use, and complies to docker best practices.
+
+Document your environment variables in `docker-compose.env.yaml`.
+
 ### Entrypoint
 
 The entrypoint that is defined in the Dockerfile gets run when the image is started unless manually overridden by another entrypoint (`docker run --entrypoint=<entrypoint>`).
