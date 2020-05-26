@@ -5,7 +5,7 @@ This documentation covers the practical details for developing open source code 
 The site is built with [docz](https://www.docz.site/).
 
 ## Deployments
-Production environment: https://developer.hel.ninja/
+Production environment: https://dev.hel.fi/
 
 ## Issue tracking
 Jira: https://helsinkisolutionoffice.atlassian.net/projects/DEV/issues/?filter=allissues
