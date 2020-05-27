@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-404-js","path":"/404.html","result":{"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+{"componentChunkName":"component---docs-404-md","path":"/404.html","result":{"pageContext":{"isCreatedByStatefulCreatePages":false,"frontmatter":{"name":" ","route":"/404"},"entry":{"id":"f0ad8496b2006fad7c2a4ddaec561e97","filepath":"docs/404.md","fullpath":"/home/runner/work/bestpractice/bestpractice/docs/404.md","route":"/404","slug":"docs-404","name":" ","menu":"","headings":[{"slug":"oh-noes-","depth":1,"value":"Oh noes! 🙈"}]}}}}
