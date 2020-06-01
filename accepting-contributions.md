@@ -3,4 +3,4 @@
 
 [Document moved here](docs/accepting-contributions.md)
 
-[Document on Helsinki Developers](https://developer.hel.ninja/accepting-contributions) (under construction)
+[Document on Helsinki Developers](https://dev.hel.fi/accepting-contributions)
