@@ -3,4 +3,4 @@
 
 [Document moved here](docs/django-configuration.md)
 
-[Document on Helsinki Developers](https://developer.hel.ninja/django-configuration) (under construction)
+[Document on Helsinki Developers](https://dev.hel.fi/django-configuration)
