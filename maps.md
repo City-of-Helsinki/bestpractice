@@ -3,4 +3,4 @@
 
 [Document moved here](docs/maps.md)
 
-[Document on Helsinki Developers](https://developer.hel.ninja/maps) (under construction)
+[Document on Helsinki Developers](https://dev.hel.fi/maps)
