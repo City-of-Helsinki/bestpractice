@@ -21,6 +21,7 @@
     "swagger-ui-react": "^3.25.0"
   },
   "devDependencies": {
+    "gatsby-plugin-matomo": "^0.8.3",
     "hds-core": "0.4.1",
     "hds-react": "0.5.4",
     "react-helmet": "^5.2.1",
