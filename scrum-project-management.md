@@ -3,4 +3,4 @@
 
 [Document moved here](docs/scrum-project-management.md)
 
-[Document on Helsinki Developers](https://developer.hel.ninja/scrum-project-management) (under construction)
+[Document on Helsinki Developers](https://dev.hel.fi/scrum-project-management)
