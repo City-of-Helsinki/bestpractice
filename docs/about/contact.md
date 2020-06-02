@@ -1,6 +1,7 @@
 ---
 name: Contact
-route: /contact
+route: /about/contact
+menu: About
 ---
 
 # Contact

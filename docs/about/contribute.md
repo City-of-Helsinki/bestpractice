@@ -1,6 +1,7 @@
 ---
 name: Contribute
-route: /contribute
+route: /about/contribute
+menu: About
 ---
 # Contribute
 
