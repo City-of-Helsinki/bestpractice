@@ -11,8 +11,7 @@ const menu = [
   "Best practices",
   "APIs",
   "Resources",
-  "Contribute", 
-  "Contact"
+  "About"
 ];
 
 export default {
