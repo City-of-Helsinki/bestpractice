@@ -13,7 +13,7 @@ menu: Best practices
 > Accessibility means developing content to be as accessible as possible no matter an individual's physical and cognitive abilities and no matter how they access the web.
 > ([Mozilla Accessibility Guide](https://developer.mozilla.org/en-US/docs/Web/Accessibility))
 
-Web accessibility is the development of websites that can be used by everyone. All City of Helsinki websites are required to be accessible by the standards of 
+Web accessibility is the development of websites that can be used by everyone. All City of Helsinki websites aim to be accessible by the standards of 
 [WCAG 2.1 at AA Level](https://www.w3.org/TR/WCAG21/#conformance).
 The [EU directive on web accessibility](https://eur-lex.europa.eu/eli/dir/2016/2102/oj) mandates that all new public sector websites 
 have to comply with a similar level of accessibility by the time of production release (older websites by September 23 2020).
@@ -45,6 +45,8 @@ Users affected by these conditions use [assistive technology and adaptive strate
 * Follow the [React accessibility guide](https://reactjs.org/docs/accessibility.html). Use ARIA when there is no native markup.
 * Inspect npm packages for accessibility before selecting them as dependencies
 * Use accessible components from the [Helsinki Design System](https://city-of-helsinki.github.io/helsinki-design-system)
+* Follow the *Technical implementation* part of the *Accessibility in
+practical work tasks* chapter found in the [Helsinki accessibility statement instructions](https://www.hel.fi/static/liitteet/kanslia/TPR//Saavutettavuus/Accessibility_statement_instruction.pdf)
 
 ### Checklists
 * [A11Y checklist](https://a11yproject.com/checklist/)
@@ -107,6 +109,7 @@ These open source building blocks have been used at some point in some services 
 
 ## Resources
 * [City of Helsinki content accessibility guidelines for the web](https://www.hel.fi/static/liitteet/kanslia/TPR/opas_saavutettavaan_sisaltoon_EN.pdf)
+* [City of Helsinki accessibility statement instructions](https://www.hel.fi/static/liitteet/kanslia/TPR//Saavutettavuus/Accessibility_statement_instruction.pdf)
 * [Helsinki Design System section on accessibility](https://city-of-helsinki.github.io/helsinki-design-system/guidelines/accessibility)
 * [The A11Y Project](https://a11yproject.com/)
 * [W3C Web Accessibility Initiative](https://www.w3.org/WAI/)  
