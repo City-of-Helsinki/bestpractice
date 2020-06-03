@@ -1,4 +1,8 @@
+---
+name: ' '
+route: /apis/issuereporting
+---
 
-# Issue Reporting API is documentation is under Open311
+# Issue Reporting API has moved
 
-[Go here](/apis/open311)
+Documentation can now be found here [https://dev.hel.fi/apis/open311](/apis/open311)
