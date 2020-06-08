@@ -1,7 +1,7 @@
 ---
 name: Service Map
 menu: APIs
-route: /apis/servicemap
+route: /apis/service-map-backend-api
 ---
 
 
