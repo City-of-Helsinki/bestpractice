@@ -1,6 +1,6 @@
 
 # Map layers (how to get Helsinki map tiles into your UI)
 
-[Document moved here](docs/maps.md)
+[Document moved here](docs/resources/maps.md)
 
-[Document on Helsinki Developers](https://developer.hel.ninja/maps) (under construction)
+[Document on Helsinki Developers](https://dev.hel.fi/maps)

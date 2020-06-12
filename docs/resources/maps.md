@@ -1,6 +1,6 @@
 ---
 name: Map layers (how to get Helsinki map tiles into your UI)
-menu: Best practices
+menu: Resources
 route: /maps
 ---
 

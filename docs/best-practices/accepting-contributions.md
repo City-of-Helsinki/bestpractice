@@ -51,3 +51,4 @@ Some practices when reviewing and merging the PR:
 * If it requires more than five fixes, just request them from the
   contributor.
 
+Also add [GitHub issue and pull request templates](/documentation#github-templates) to the repository to facilitate community contributions.

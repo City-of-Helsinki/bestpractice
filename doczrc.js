@@ -8,9 +8,10 @@ const themeConfig = {
 };
 
 const menu = [
-  "Helsinki Developers",
-  "APIs",
   "Best practices",
+  "APIs",
+  "Resources",
+  "About"
 ];
 
 export default {
@@ -19,6 +20,7 @@ export default {
   typescript: true,
   files: "docs/**/*.{md,markdown,mdx}",
   title: "Helsinki Developers",
+  ignore: ["docs/drafts/*",],
   themeConfig,
   menu
 };
