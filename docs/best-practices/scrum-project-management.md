@@ -81,15 +81,16 @@ The Definition of Done (DoD) is a specification of what needs to be done for an 
 To be considered Done, an issue must have
 
   * An implementation
-  * Regression tests for the happy path and most common error cases
-  * Documentation updated (preferably machine readable documentation; see the documentation practices)
+  * [Regression tests](./testing-requirements) for the happy path and most common error cases
+  * [Documentation](./documentation) updated (preferably machine readable documentation)
   * Accessibility taken into account (works without mouse, works with WCAG guidelines)
   * All components offered to Helsinki Design System
-  * Does not degrade performance (automatic tests on CI?)
+  * Does not degrade performance (preferably verified by automatic tests on CI)
   * Localisation infrastructure in place for user-visible text that is in some language
   * Code review done, code reviewer checklist:
     * Coding style neat
-    * Test coverage ok
+    * [Coding standards](./coding-standards) obeyed
+    * [Test coverage](./testing-requirements) ok
     * Code architecture sensible
     * Security handled properly (input validation etc, OWASP top 10)
     * Other things in DoD done
