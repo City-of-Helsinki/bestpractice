@@ -8,8 +8,10 @@ route: /licensing
 Appropriate licensing ensures that the works produced by the city can be reused.
 
 ## Software license
-Code is to be licensed under the [MIT license](https://opensource.org/licenses/MIT), unless there is a very strong case against using it. One common reason to use another license is when the code will be published in the context of another project / ecosystem with strong licensing conventions of their own -- for example as Drupal extensions to be hosted at Drupal.org.
+Code is to be licensed under the [MIT license](https://opensource.org/licenses/MIT), unless there is a very strong case against using it. 
 The MIT is a permissive license that imposes only very limited restriction on reuse and has high compatibility with other software licenses.
+
+One common reason to use another license is when the code will be published in the context of another project or ecosystem with strong licensing conventions of their own - for example as Drupal extensions to be hosted at Drupal.org.
 
 Include a LICENSE file in the root of  the project on GitHub, with this content:
 
