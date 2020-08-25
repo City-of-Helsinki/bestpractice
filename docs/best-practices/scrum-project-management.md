@@ -94,8 +94,15 @@ To be considered Done, an issue must have
     * Code architecture sensible
     * Security handled properly (input validation etc, OWASP top 10)
     * Other things in DoD done
-  * UX review done (check with designer that the UI/API/whatever works as it should)
+  * UX/PO review done (see "who should do acceptance reviews")
   * Leftover tasks made into issues
+
+### Who should do acceptance reviews?
+
+  * FE tasks => designer and PO (really, both, not just one of them)
+  * BE tasks => architect and FE developer
+  * design tasks => PO and FE developer
+  * technical improvements => only code review
 
 ## Responsibilities of Scrum Masters
 
