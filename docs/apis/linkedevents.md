@@ -20,7 +20,7 @@ Event data is licensed using CC BY 4.0 license. [FI](http://creativecommons.org/
 
 ## Documentation
 
-[The browsable API](http://api.hel.fi/linkedevents/v0.1/#usage-instructions) contains usage examples if you choose to delve right in. The full API documentation is provided below.
+[The browsable API](https://api.hel.fi/linkedevents/v1/) contains usage examples if you choose to delve right in. The full API documentation is provided below.
 
 import APIDoc from "../../src/components/apidoc";
 
