@@ -94,9 +94,9 @@ line_length=88
     *   Use mypy for checking
     *   Use your editor tooling (for example PyCharm can benefit from types)
     *   Check
-        PEP 3107 (function annotations),
-        PEP 484 (defined format for annotations + comment annotations) and
-        PEP 526 (syntax for variable annotations)
+        [PEP 3107](https://www.python.org/dev/peps/pep-3107/) (function annotations),
+        [PEP 484](https://www.python.org/dev/peps/pep-0484/) (defined format for annotations + comment annotations) and
+        [PEP 526](https://www.python.org/dev/peps/pep-0526/) (syntax for variable annotations)
 
 *   Use a doctest to illustrate use and also run the doctests
     (again, so that they won't get stale).
