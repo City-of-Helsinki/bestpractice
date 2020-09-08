@@ -87,7 +87,9 @@ To be considered Done, an issue must have
   * All components offered to Helsinki Design System
   * Does not degrade performance (preferably verified by automatic tests on CI)
   * Localisation infrastructure in place for user-visible text that is in some language
+  * Has testing instructions
   * Code review done, code reviewer checklist:
+    * Works (by trying it out with the testing instructions)
     * Coding style neat
     * [Coding standards](./coding-standards) obeyed
     * [Test coverage](./testing-requirements) ok
