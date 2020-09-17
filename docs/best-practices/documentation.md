@@ -119,3 +119,7 @@ A clear and concise description of any alternative solutions or features you've 
 Add any other context or screenshots about the feature request here.
 
 ```
+
+## API documentation
+REST APIs should be documented according to the [OpenAPI specification](https://www.openapis.org/) (formerly Swagger specification).
+
