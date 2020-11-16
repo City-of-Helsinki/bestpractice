@@ -16,9 +16,10 @@ route: /version-control
 
 ### Commits, Pull Requests and Messages
 * Commit as often as possible, but usually not when the code is broken (doesn't work)
-  * so try to arrange your changes into small ones that keep everything working
-* Commit messages should be about why the change was done (what it will change as result)
-  * Mention the Jira issue (KUVA-3, for instance) in the commit message
+  * so try to arrange your changes into small self-contained and minimal commits that keep everything working
+* Write commit messages in the following manner
+  * Start the commit message title (ie. the first line of the commit message) with the JIRA issue key followed by a space followed by a very short summary of _what_ was done
+  * In the commit message body, specify _why_ the change was done (what it will change as result) and why it was implemented in this way
 * We have the Github Jira integration which does some magic linking if you mention issues in commit messages, PR's, branch names or Github issues.
   * You can also use commit messages to update Jira issues as mentioned in Smart commits documentation.
 * Arrange your work so that it's made in the smallest possible useful increments, and make pull requests out of those.
