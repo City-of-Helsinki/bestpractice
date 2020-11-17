@@ -27,17 +27,23 @@ Current instances are:
 To get access to Kanslia instance, pop by the slack channel #tunnistamo.
 For KuVa instance the onboarding process has already told you the right channels.
 
-As a concrete result you will have four pieces of data:
-* the URL for your tunnistamo instance (like https://api.hel.fi/sso/, the executive office instance)
-* your client ID
-* your client secret (this does not exist in all cases)
-* your agreed callback URL. This depends entirely on your authentication library
+Things can be faster if you can include in your initial message:
+* responsible person for your application
+* your OpenID Connect flow type. Currently we can only support "Authorization Code" and "Implicit" flow types.
+* your callback url
+
+Flow type depends on your application. Typically, if your application has some sort of backend running server-side, you will be using Authorization Code flow. Conversely, if your application exists only as Javascript files served to the client browser ("SPA"), you will be using Implicit flow. Implicit flow has some security weaknesses, and is being replaced by "Authorization code flow with PKCE". We unfortunately cannot support it yet.
 
 Callback URL is the address within your application for finalizing the authentication. You will have at least two callbacks:
-* one within "localhost", for using on your own personal computer
+* one within "localhost", for using on your local development box
 * one or more, that refer to public instances of your application
 
-Armed with those you can begin attaching authentication to your application.
+As a concrete result you will have three pieces of data:
+* the URL for your tunnistamo instance (like https://api.hel.fi/sso/, the executive office instance)
+* your client ID
+* your client secret (only for Authorization Code flow)
+
+Armed with those, and knowledge of your callback URL, you can begin attaching authentication to your application.
 
 ## Handling authentication (user login)
 
@@ -67,7 +73,7 @@ undocumented. Currently suggested procedure is:
 The authentication libraries you use might handle all these steps automatically.
 
 The logout popup will inform the user that they will need to log out of any upstream IdPs
-(like YLE or Facebook), if they wish to.
+(like YLE or Facebook), if they are on shared computer.
 
 SPA can additionally listen for postMessage hel:logout. This is supposed to indicate that
 the logout actually succeeded. (This is not actually implemented at the moment).
