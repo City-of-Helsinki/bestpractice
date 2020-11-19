@@ -51,6 +51,7 @@ Branching model is [GitHub flow](https://guides.github.com/pdfs/githubflow-onlin
 
 In general hotfixes should be avoided, but there can be emergency cases where a critical bug is found from production and for some reason `master` is not deployable.
 * Create a branch from release tag `git checkout -b hotfix/release-x.x.x release-x.x.x`
-* Implement emergency fix to that branch (either cherry pick or commit)
+* Implement emergency fix to that branch (cherry pick from `master` or make a new commit if you cannot cherry pick)
+  * If you cannot cherry pick, the fix needs to be implemented to `master` as a new commit also
 * Tag the hotfix branch to get it deployed, tag name: `release-x.x.x-hotfix`
 * Never merge the hotfix branch (just leave it there or eventually delete it)
