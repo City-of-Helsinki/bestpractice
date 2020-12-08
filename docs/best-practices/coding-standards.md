@@ -310,3 +310,11 @@ separate cleanup from the other parts.
 
 If you need to run the Promises in parallel, use `Promise.all()` (or `Promise.race()`).
 
+### Form guidelines
+Helsinki Design System offers two patterns that are related to form design and implementation. These patterns give general guidelines on how to build consistent, usable and accessible forms and how to utilise design system components for this. Form validation pattern also includes code examples in React using `yup` validation library and HDS form components. While dynamic validation is the recommended method, HDS also has a static method available when dynamic validation is not possible.
+
+- [HDS Form guidelines](https://hds.hel.fi/patterns/forms)
+- [HDS Form validation guidelines](https://hds.hel.fi/patterns/form-validation)
+    - [Dynamic validation (recommended) example](https://hds.hel.fi/storybook/react/?path=/docs/patterns-form-validation--dynamic)
+    - [Static validation example](https://hds.hel.fi/storybook/react/?path=/docs/patterns-form-validation--static)
+    - [Hybrid validation example](https://hds.hel.fi/storybook/react/?path=/docs/patterns-form-validation--hybrid)
