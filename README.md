@@ -50,6 +50,14 @@ If everything goes well, you'll find the static site at `public/`.
 
 Docz configuration is handled via the [`doczrc.js`](doczrc.js). Follow the [Project Configuration reference](https://www.docz.site/docs/project-configuration).
 
+### Data and AI solutions
+
+When developing data solutions, the basic best practices are used where applicable. In addition, there are a few other things you should consider, for exaple:
+- tidy format and pipelines
+- notebooks
+- visualization
+
+
 ## License
 Usage is provided under the MIT License, except for the contents of the [docs](/docs) folder. The best practices documentation content found therein is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), unless noted otherwise in the documentation.
 
