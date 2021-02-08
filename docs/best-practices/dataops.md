@@ -1,6 +1,17 @@
 # Practices for data-intensive projects
 
-Use python venv
+## Preferences on languages and technologies
+Prefer open source software and widely used packages, that are actively developed and have a steady user base. where possible. Avoid lisenced or commercial services, environments and platforms, unless there is a good reason to do so. Note that there may be many cases where it is better to outsource an AI solution than code & train or even just train your own algorithm. 
+
+## Package management
+
+### Python
+    Use <\code>venv<\code> for package management. If this is not possible, for example in Azure Machine Learning that only supports <\code>conda<\code> environments, install all packages trough <\code>pip<\code> and export requirements using <\code>pip freeze >> requirements.txt<\code> for reproducibility in other environments.
+
+### R
+ Use <\code>packrat<\code> for package management.
+
+### Other
 
 # Development
 ## Pipelines
