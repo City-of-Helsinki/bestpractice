@@ -45,5 +45,11 @@ common methods & libraries > niche and diy solutions
 
 ## Notebooks
 
+### Nbdev
+### jupyter extensions
+https://github.com/ipython-contrib/jupyter_contrib_nbextensions
+### jupyter black
+https://github.com/drillan/jupyter-black
+
 ## Integration
 
