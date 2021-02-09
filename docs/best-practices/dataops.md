@@ -46,10 +46,10 @@ common methods & libraries > niche and diy solutions
 ## Notebooks
 
 ### Nbdev
-### jupyter extensions
-https://github.com/ipython-contrib/jupyter_contrib_nbextensions
-### jupyter black
-https://github.com/drillan/jupyter-black
+
+### Code formatting with notebooks
+Use nb_black for code formatting when developing with notebooks
+https://github.com/dnanhkhoa/nb_black
 
 ## Integration
 
