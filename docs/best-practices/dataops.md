@@ -41,6 +41,9 @@ common methods & libraries > niche and diy solutions
 ### Communicate
 #### Documentation
 #### Visualization
+
+##### Guidelines on using colors in plots
+
 #### Demonstrate
 
 ## Notebooks
