@@ -6,10 +6,10 @@ Prefer open source software and widely used packages, that are actively develope
 ## Package management
 
 ### Python
-    Use <code>venv<\code> for package management. If this is not possible, for example in Azure Machine Learning that only supports <code>conda<\code> environments, install all packages trough <code>pip<\code> and export requirements using <code>pip freeze >> requirements.txt<\code> for reproducibility in other environments.
+Use <code>venv</code> for package management. If this is not possible, for example in Azure Machine Learning that only supports <code>conda</code> environments, install all packages trough <code>pip</code> and export requirements using <code>pip freeze >> requirements.txt</code> for reproducibility in other environments.
 
 ### R
- Use <code>packrat<\code> for package management.
+Use <code>packrat</code> for package management.
 
 ### Other
 
