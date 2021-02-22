@@ -58,8 +58,10 @@ Data is rarely stored in tidy format, but that's why we have the preprocessing p
 The tidy ideology does not limit to the data, but extends to the tools that utilize it. Tidy tools
 - reuse existing data structures i.e. keeping the data tidy
 - utilize piping simple functions, i.e. 
--- <code>data.function1().function2()</code> in Python, and
--- <code>magrittr</code> pipe operator <code>data %>% function1() %>% function2() %>%</code> built in the <code>tidyverse</code> libary of R
+  - class functions <code>data.function1().function2()</code> in Python, and
+  - <code>magrittr</code> pipe operator <code>data %>% function1() %>% function2() %>%</code> built in the <code>tidyverse</code> libary of R
+
+Most data transformations can be covered with piped functions, and these usually come with the best implementation available. It is unlikely that you can do better, so so a bit of research before trying a DIY solution.
 
 Piped functions should be 'jacks of one trade', i.e. only do one thing, do it well and avoid mixing side-effects and transformations. 
 Tidy tools improve scalability of the code, but they also greatly improve the readability of the code, making it easier to read and perceive. Of course, this is only when the functions are properly named. Function names:
