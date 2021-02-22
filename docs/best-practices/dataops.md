@@ -42,14 +42,29 @@ A good explanation of the differences between the two can be found for example i
 #### Source of data: API vs curated dataset
   Note that data should not included in version control, ecept for what demos or tests reruire. With personal information one must be extra careful with this. 
   All development on utilizing personal information must be done using anonymised data until the final evaluations.
-#### Tidy
+#### Tidy data
+> "All tidy datasets are alike, but every messy dataset is messy in its own way." - Hadley Wickham
 All analysis scripts should assume tidy data as input.
 This means that each
 - column represents a variable
 - row represents an observation
 - cell only contains a single value
 
-Data is rarely stored in tidy format, so the preprocessing pipeline should convert it ready for analysis.
+Data is rarely stored in tidy format, but that's why we have the preprocessing pipe for converting it.
+
+#### Tidy tools
+
+The tidy ideology does not limit to the data, but extends to the tools that utilize it. Tidy tools
+- reuse existing data structures i.e. keeping the data tidy
+- utilize piping simple functions, i.e. 
+-- <code>data.function1().function2()</code> in Python, and
+-- <code>magrittr</code> pipe operator <code>data %>% function1() %>% function2() %>%</code> built in the <code>tidyverse</code> libary of R
+Piped functions should be 'jacks of one trade', i.e. only do one thing, do it well and avoid mixing side-effects and transformations. 
+Tidy tools improve scalability of the code, but they also greatly improve the readability of the code, making it easier to read and perceive. Of course, this is only when the functions are properly named. Function names:
+- should be verbs
+- identidy function families with a common prefix
+- be rather long and descriptive than short and uninformative. Don't worry, autoincrement will take care of typing for you!
+
 
 Read more on tidy: [Wickham 2014](https://vita.had.co.nz/papers/tidy-data.html) and [The tidy tools manifesto](https://cran.r-project.org/web/packages/tidyverse/vignettes/manifesto.html)
 
