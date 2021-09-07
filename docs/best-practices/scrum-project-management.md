@@ -11,8 +11,9 @@ issue-specific refinement sessions to prepare for Sprint Plannings.
 
 ## Scrum practices
 
-* Product Backlog Refinement: called separately to prepare well-sized and defined tickets for next sprint.
-  * Split Product Backlog Items (stories) into tasks the size of at most two days.
+* Product Backlog Refinement: called separately to prepare well-sized and defined tickets for next sprint or to gain overall understanding on backlog or roadmap 
+
+* Plan for future Backlog Item implementations, gain more understanding on Backlog by discussing and estimating Backlog Items or split Product Backlog Items (stories) into tasks the size of at most two days.
   * People can suggest stuff for raising on the backlog.
   * Will be done with small focused teams with a frontend dev, backend dev, designer and architect (and facilitator).
 * Sprint Planning: one half-day (or less) to decide on what to do next sprint
@@ -26,11 +27,7 @@ issue-specific refinement sessions to prepare for Sprint Plannings.
   * Tell things that suck in our way of working
   * Pick the most painful ones (e.g. by vote)
   * Decide what is to be done about them, when and by whom
- * Daily Scrum: 15 minutes (or less) for the development team to plan the work for the day.
-   * For example, the Development Team members can each answer these 3 questions:
-     * What did I do yesterday to help the Development Team meet the Sprint Goal?
-     * What will I do today to help the Development Team meet the Sprint Goal?
-     * Do I see any impediment that prevents me or the Development Team from meeting the Sprint Goal?
+ * Daily Scrum: 15 minutes (or less) for the development team to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work. The Developers can select whatever structure and techniques they want.
 
 ## Sprint Planning checklist
 
@@ -108,18 +105,25 @@ To be considered Done, an issue must have
 
 ## Responsibilities of Scrum Masters
 
-Ensure that we follow agile principles and scrum to your best abilities:
+Scrum Master is accountable for making Scrum happen according to Scrum Guide by helping everyone understand Scrum theory and practice. Scrum Master is also accountable for the Scrum Team’s effectiveness by enabling the Scrum Team to improve its practices within the Scrum framework. 
 
-  * Organise and facilitate Scrum events: Daily Scrum, Sprint Planning, Sprint Review and Sprint Retrospective
-  * Assist Product Owner with keeping the Product Backlog in order
-  * If insufficient number of issues in backlog fulfill the DoR, make PO enrich them and arrange a backlog refinement for upcoming work
-  * During sprint: see that the sprint is proceeding at least somewhat according to the plan; raise the issue and investigate reasons
-    *   Check that reviews are being done quickly (check their WIP) - remind developers to push stuff into review, preferably f2f with the reviewer
-    *   Check that PO is accepting reviewed work (check “acceptance” WIP) - remind developers to push issues into acceptance
-  * Help team members keep each other accountable when reviewing stories and pull requests: Do they fulfil requirements in DoR and DoD
-  * Identify, keep track of and resolve impediments (also in form of work blocked because of dependencies).
+The Scrum Master helps the Scrum Team in several ways, including: 
+* Coaching the team members in self-management and cross-functionality; 
+* Helping the Scrum Team focus on creating high-value Increments that meet the Definition of Done; 
+* Helping to remove impediments to the Scrum Team’s progress; and, 
+* Ensuring that all Scrum events take place and are positive, productive and kept within the timebox. 
+
+The Scrum Master helps the Product Owner in several ways, including: 
+* Helping find techniques for effective Product Goal definition and Product Backlog management; 
+* Helping the Scrum Team understand the need for clear and concise Product Backlog items; 
+* Helping establish empirical product planning for a complex environment; and, 
+* Facilitating stakeholder collaboration as requested or needed and helping to remove barriers between stakeholders and Scrum Team. 
+
+The Scrum Guide defines broader responsibilities for the Scrum Master. This is a reduced role description for the City of Helsinki context. 
 
 In general, see:
+  * [Scrum master responsibilities](https://scrummasterchecklist.org/pdf/ScrumMaster_Checklist_12_unbranded.pdf)
+  * [Scrum checklist](https://www.crisp.se/wp-content/uploads/2012/05/Scrum-checklist.pdf)
+  * [Scrum Guide](https://scrumguides.org/scrum-guide.html)
 
-  * [scrum master responsibilities](https://scrummasterchecklist.org/pdf/ScrumMaster_Checklist_12_unbranded.pdf)
-  * [scrum checklist](https://www.crisp.se/wp-content/uploads/2012/05/Scrum-checklist.pdf)
+Adapted from the [Scrum Guide](https://scrumguides.org/scrum-guide.html).
