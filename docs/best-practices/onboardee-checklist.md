@@ -47,7 +47,7 @@ route: /onboardee-checklist
 * Choose an email address of your own that you'd like to use for working in City of Helsinki.
     * Unless you're working for City of Helsinki itself, as a developer, you won't get hel.fi email accounts, but this might change in the future.
 * Choose your Github and Gitlab username that you'd like to use for working in City of Helsinki.
-* Give your email and Github and Gitlab usernames to your onboarder so they can give you access to:
+* [Fill the account form](https://helmi.hel.fi/yhteisetpalvelut/tietotekniikka/tukea-digitaalisten-palvelujen-kehittamiseen/kehitt%C3%A4misen-tyokalut/) with your onboarder so they can give you access to:
     * [City of Helsinki Slack](https://helsinkicity.slack.com/)
     * [Helsinki's Atlassian for Jira, Confluence, etc](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/DD/overview)
     * [[KuVa specific:]] [KuVa's Gitlab](https://gitlab.com/City-of-Helsinki/KuVa)
