@@ -6,6 +6,15 @@ Remember, none of these are strict and you are free to deviate for achieving the
 Also, it is better to get started with the work than to perfect it from the beginning.
 You may return to these concepts when you want to improve your project or get stuck, iteratively!
 
+ML requires team effort. When working with data, we have three kinds of people.
+We have people who know code, people who know data, and people who know a problem to solve.
+Those who know two of these are rare, not to mention owning all three.
+Working with the template enables joint work of application field specialists 
+(e.g. healthcare, city planning, finance), researchers, data analysts, engineers & scientists, programmers and other stakeholders.
+In essence, the template is a tool for teamwork - *a single person does not have to, and most likely does not even know how to complete all of the steps defined!*.
+With code, documentation and results as one, each team member can understand what is going on, and contribute on their behalf.
+
+
 For general coding best practices in city of Helsinki projects, refer to [dev.hel.fi](https://dev.hel.fi/) where applicable.
 
 ---
