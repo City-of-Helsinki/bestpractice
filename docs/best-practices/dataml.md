@@ -14,6 +14,13 @@ Working with the template enables joint work of application field specialists
 In essence, the template is a tool for teamwork - *a single person does not have to, and most likely does not even know how to complete all of the steps defined!*.
 With code, documentation and results as one, each team member can understand what is going on, and contribute on their behalf.
 
+If you see a tool or concept you are not familiar with, don't be scared.
+Just follow along and you'll get started with ease, for sure.
+
+If you have a question, the internet most probably already has the answer. Just search engine it!
+If you can't find the answer, you can post your question to the [discussion forum](https://github.com/City-of-Helsinki/ml_project_template/discussions),
+so the maintainers can help. [Stack Overflow](https://stackoverflow.com/) is the recommended forum for questions that are not specific to this template.
+
 
 For general coding best practices in city of Helsinki projects, refer to [dev.hel.fi](https://dev.hel.fi/) where applicable.
 
