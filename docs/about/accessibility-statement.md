@@ -24,10 +24,10 @@ This statement was prepared on 02/06/2020.
 The accessibility statement will be updated so that it corresponds with the observations related to accessibility compliance made during an audit.
 
 ### Requesting information in an accessible format
-If a user feels that content on a website is not available in an accessible format, they can request for this information by e-mail at dev@hel.fi or through the [feedback form](https://www.hel.fi/helsinki/en/administration/participate/feedback). The aim is to reply to the enquiry within a reasonable time frame.
+If a user feels that content on a website is not available in an accessible format, they can request for this information through the [feedback form](https://www.hel.fi/helsinki/en/administration/participate/feedback). The aim is to reply to the enquiry within a reasonable time frame.
 
 ### Feedback and contact information
-City of Helsinki, City Executive Office, Software development team (dev@hel.fi)
+City of Helsinki, City Executive Office, Software development team, [contact form](https://www.hel.fi/helsinki/en/administration/participate/feedback).
 
 ### The City of Helsinki and accessibility
 The objective of the city of Helsinki is to be an accessible city to all. Helsinki aims to ensure that all residents are able to move about and act as effortlessly as possible and that all content and services are accessible to all.
