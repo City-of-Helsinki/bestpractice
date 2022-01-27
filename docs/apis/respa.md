@@ -16,7 +16,7 @@ The Respa API is a citywide reservation booking system backend, allowing for eas
 
 ## Authentication
 
-Authentication happens primarily through Tunnistamo. To obtain an API key for testing purposes, contact us on [Gitter](https://gitter.im/City-of-Helsinki/heldev).
+Authentication happens primarily through Tunnistamo. To obtain an API key for testing purposes, [contact us](https://www.hel.fi/helsinki/en/administration/participate/feedback).
 
 ## Documentation
 
