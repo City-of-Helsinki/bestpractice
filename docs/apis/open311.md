@@ -33,7 +33,7 @@ The City of Helsinki has a separate [test environment](http://dev.hel.fi/open311
 3.  The developer requests an API key for the production system. After city personnel has verified that the client conforms to the API terms, the production API key is created and given to the developer. Reserve 1-2 weeks for the verification.
 4.  The developer's application is deployed using the production system API key and is tested against the production system.
 
-For test and production system API keys contact Timo Tuominen, timo.tuominen@hel.fi, +358 9 310 25495.
+For test and production system API keys [contact us](https://www.hel.fi/helsinki/en/administration/participate/feedback).
 
 ## Terms of service and licence
 
